@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Code::Blocks App wx3.0.x" />
+		<Option default_target="src" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="src">
+				<Option output="devel30/codeblocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="devel30" />
+				<Option object_output=".objs30" />
+				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-DBUILDING_PLUGIN" />
+					<Add directory="include" />
+					<Add directory="include/scripting/include" />
+					<Add directory="include/scripting/sqplus" />
+					<Add directory="include/mozilla_chardet" />
+					<Add directory="include/mozilla_chardet/mfbt" />
+					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
+					<Add directory="include/mozilla_chardet/xpcom" />
+					<Add directory="include/mozilla_chardet/xpcom/base" />
+					<Add directory="include/mozilla_chardet/xpcom/glue" />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,--enable-auto-import" />
+					<Add option="-Wl,--no-undefined" />
+					<Add library="codeblocks" />
+					<Add library="shfolder" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="comctl32" />
+					<Add library="odbc32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add directory="devel30" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
+					<Add after="zip -jq9 devel30\share\CodeBlocks\resources.zip src\resources\*.xrc" />
+					<Add after="zip -jq9 devel30\share\CodeBlocks\start_here.zip src\resources\start_here\*.html src\resources\start_here\*.png" />
+					<Add after='cmd /c &quot;cd src\resources &amp; zip -0 -q ..\..\devel30\share\CodeBlocks\resources.zip images\*.png images\16x16\*.png&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Environment>
+				<Variable name="WX_CFG" value="" />
+				<Variable name="WX_SUFFIX" value="u" />
+				<Variable name="WX_VERSION" value="30" />
+			</Environment>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="src;" />
+			<Add alias="Core app" targets="src;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="$(#CB_RELEASE_TYPE)" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-fmessage-length=0" />
+			<Add option="-fexceptions" />
+			<Add option="-DHAVE_W32API_H" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DcbDEBUG" />
+			<Add option="-DNOPCH" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="$(#WX30.include)" />
+			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
+			<Add directory="sdk/wxscintilla/include" />
+			<Add directory="include/tinyxml" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#WX30.include)" />
+			<Add directory="$(#WX30)/lib/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+			<Add directory="base/tinyxml" />
+			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
+		</Linker>
+		<Unit filename="scripts/gdb_types.script">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="scripts/make_dist.script" />
+		<Unit filename="scripts/plugin_find_broken_files.script" />
+		<Unit filename="scripts/sample_plugin.script" />
+		<Unit filename="scripts/startup.script">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="scripts/wx_help.script" />
+		<Unit filename="src/app.cpp" />
+		<Unit filename="src/app.h" />
+		<Unit filename="src/appglobals.cpp" />
+		<Unit filename="src/appglobals.h" />
+		<Unit filename="src/associations.cpp" />
+		<Unit filename="src/associations.h" />
+		<Unit filename="src/backtracedlg.cpp" />
+		<Unit filename="src/backtracedlg.h" />
+		<Unit filename="src/batchbuild.h" />
+		<Unit filename="src/breakpointsdlg.cpp" />
+		<Unit filename="src/breakpointsdlg.h" />
+		<Unit filename="src/compilersettingsdlg.cpp" />
+		<Unit filename="src/compilersettingsdlg.h" />
+		<Unit filename="src/cpuregistersdlg.cpp" />
+		<Unit filename="src/cpuregistersdlg.h" />
+		<Unit filename="src/crashhandler.cpp" />
+		<Unit filename="src/crashhandler.h" />
+		<Unit filename="src/debugger_interface_creator.cpp" />
+		<Unit filename="src/debugger_interface_creator.h" />
+		<Unit filename="src/debuggermenu.cpp" />
+		<Unit filename="src/debuggermenu.h" />
+		<Unit filename="src/debuggersettingscommonpanel.cpp" />
+		<Unit filename="src/debuggersettingscommonpanel.h" />
+		<Unit filename="src/debuggersettingsdlg.cpp" />
+		<Unit filename="src/debuggersettingsdlg.h" />
+		<Unit filename="src/debuggersettingspanel.cpp" />
+		<Unit filename="src/debuggersettingspanel.h" />
+		<Unit filename="src/disassemblydlg.cpp" />
+		<Unit filename="src/disassemblydlg.h" />
+		<Unit filename="src/dlgabout.cpp" />
+		<Unit filename="src/dlgabout.h" />
+		<Unit filename="src/dlgaboutplugin.cpp" />
+		<Unit filename="src/dlgaboutplugin.h" />
+		<Unit filename="src/editkeywordsdlg.cpp" />
+		<Unit filename="src/editkeywordsdlg.h" />
+		<Unit filename="src/editorconfigurationdlg.cpp" />
+		<Unit filename="src/editorconfigurationdlg.h" />
+		<Unit filename="src/environmentsettingsdlg.cpp" />
+		<Unit filename="src/environmentsettingsdlg.h" />
+		<Unit filename="src/examinememorydlg.cpp" />
+		<Unit filename="src/examinememorydlg.h" />
+		<Unit filename="src/find_replace.cpp" />
+		<Unit filename="src/find_replace.h" />
+		<Unit filename="src/infopane.cpp" />
+		<Unit filename="src/infopane.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main.h" />
+		<Unit filename="src/notebookstyles.cpp" />
+		<Unit filename="src/notebookstyles.h" />
+		<Unit filename="src/prefix.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/prefix.h" />
+		<Unit filename="src/printdlg.cpp" />
+		<Unit filename="src/printdlg.h" />
+		<Unit filename="src/projectdepsdlg.cpp" />
+		<Unit filename="src/projectdepsdlg.h" />
+		<Unit filename="src/projectmanagerui.cpp" />
+		<Unit filename="src/projectmanagerui.h" />
+		<Unit filename="src/projectoptionsdlg.cpp" />
+		<Unit filename="src/projectoptionsdlg.h" />
+		<Unit filename="src/recentitemslist.cpp" />
+		<Unit filename="src/recentitemslist.h" />
+		<Unit filename="src/resources/app_compiler_settings.xrc" />
+		<Unit filename="src/resources/ask_assocs.xrc" />
+		<Unit filename="src/resources/debugger_menu.xrc" />
+		<Unit filename="src/resources/debugger_toolbar.xrc" />
+		<Unit filename="src/resources/debugger_toolbar_16x16.xrc" />
+		<Unit filename="src/resources/disassembly.xrc" />
+		<Unit filename="src/resources/dlg_about.xrc" />
+		<Unit filename="src/resources/dlg_about_plugin.xrc" />
+		<Unit filename="src/resources/edit_keywords.xrc" />
+		<Unit filename="src/resources/editor_configuration.xrc" />
+		<Unit filename="src/resources/env_settings.xrc" />
+		<Unit filename="src/resources/main_menu.xrc" />
+		<Unit filename="src/resources/main_toolbar.xrc" />
+		<Unit filename="src/resources/main_toolbar_16x16.xrc" />
+		<Unit filename="src/resources/manage_assocs.xrc" />
+		<Unit filename="src/resources/memdump.xrc" />
+		<Unit filename="src/resources/print_dialog.xrc" />
+		<Unit filename="src/resources/project_deps.xrc" />
+		<Unit filename="src/resources/project_options.xrc" />
+		<Unit filename="src/resources/resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/resources/scripting_settings.xrc" />
+		<Unit filename="src/resources/start_here/start_here.html" />
+		<Unit filename="src/resources/virtualbuildtargetsdlg.xrc" />
+		<Unit filename="src/scriptconsole.cpp" />
+		<Unit filename="src/scriptconsole.h" />
+		<Unit filename="src/scriptingsettingsdlg.cpp" />
+		<Unit filename="src/scriptingsettingsdlg.h" />
+		<Unit filename="src/splashscreen.cpp" />
+		<Unit filename="src/splashscreen.h" />
+		<Unit filename="src/startherepage.cpp" />
+		<Unit filename="src/startherepage.h" />
+		<Unit filename="src/switcherdlg.cpp" />
+		<Unit filename="src/switcherdlg.h" />
+		<Unit filename="src/threadsdlg.cpp" />
+		<Unit filename="src/threadsdlg.h" />
+		<Unit filename="src/virtualbuildtargetsdlg.cpp" />
+		<Unit filename="src/virtualbuildtargetsdlg.h" />
+		<Unit filename="src/watchesdlg.cpp" />
+		<Unit filename="src/watchesdlg.h" />
+		<Unit filename="tips.txt" />
+		<Unit filename="wxsmith/ScriptConsole.wxs" />
+		<Unit filename="wxsmith/VirtualBuildTargetsDlg.wxs" />
+		<Unit filename="wxsmith/debuggersettingscommonpanel.wxs" />
+		<Unit filename="wxsmith/debuggersettingsdlg.wxs" />
+		<Unit filename="wxsmith/debuggersettingspanel.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<wxsmith version="1">
+				<resources>
+					<wxScrollingDialog wxs="wxsmith/VirtualBuildTargetsDlg.wxs" src="src/virtualbuildtargetsdlg.cpp" hdr="src/virtualbuildtargetsdlg.h" xrc="src/resources/virtualbuildtargetsdlg.xrc" fwddecl="0" i18n="1" name="VirtualBuildTargetsDlg" language="CPP" />
+					<wxPanel wxs="wxsmith/ScriptConsole.wxs" src="src/scriptconsole.cpp" hdr="src/scriptconsole.h" fwddecl="0" i18n="1" name="ScriptConsole" language="CPP" />
+					<wxScrollingDialog wxs="wxsmith/debuggersettingsdlg.wxs" src="src/debuggersettingsdlg.cpp" hdr="src/debuggersettingsdlg.h" fwddecl="0" i18n="1" name="DebuggerSettingsDlg" language="CPP" />
+					<wxPanel wxs="wxsmith/debuggersettingspanel.wxs" src="src/debuggersettingspanel.cpp" hdr="src/debuggersettingspanel.h" fwddecl="0" i18n="1" name="DebuggerSettingsPanel" language="CPP" />
+					<wxPanel wxs="wxsmith/debuggersettingscommonpanel.wxs" src="src/debuggersettingscommonpanel.cpp" hdr="src/debuggersettingscommonpanel.h" fwddecl="0" i18n="1" name="DebuggerSettingsCommonPanel" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

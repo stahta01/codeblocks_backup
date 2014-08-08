@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Code::Blocks Core wx3.0.x">
+		<Project filename="CB_Libs_wx30.cbp" />
+		<Project filename="CB_SDK_wx30.cbp" />
+		<Project filename="CB_Tools_wx30.cbp" />
+		<Project filename="CB_Plugins_wx30.cbp" />
+		<Project filename="CB_App_wx30.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
