@@ -136,7 +136,6 @@
 		<Linker>
 			<Add option="-Wl,--enable-auto-import" />
 			<Add option="-mthreads" />
-			<Add library="wxpropgrid" />
 			<Add library="wxmsw28$(WX_SUFFIX)" />
 			<Add directory="../../../devel" />
 			<Add directory="$(#wx.lib)/gcc_dll$(WX_CFG)" />
