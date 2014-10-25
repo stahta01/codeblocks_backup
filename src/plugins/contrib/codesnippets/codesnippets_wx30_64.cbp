@@ -118,7 +118,6 @@
 		</Unit>
 		<Unit filename="snippetsimages.cpp" />
 		<Unit filename="snippetsimages.h" />
-		<Unit filename="update30_64" />
 		<Unit filename="update30_64.bat" />
 		<Unit filename="version.cpp" />
 		<Unit filename="version.h" />

@@ -81,7 +81,6 @@
 		<Unit filename="se_globals.h" />
 		<Unit filename="shellproperties.cpp" />
 		<Unit filename="shellproperties.h" />
-		<Unit filename="update" />
 		<Unit filename="update.bat" />
 		<Extensions>
 			<code_completion />

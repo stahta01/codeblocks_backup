@@ -119,7 +119,6 @@
 		</Unit>
 		<Unit filename="snippetsimages.cpp" />
 		<Unit filename="snippetsimages.h" />
-		<Unit filename="update" />
 		<Unit filename="update.bat" />
 		<Unit filename="version.cpp" />
 		<Unit filename="version.h" />

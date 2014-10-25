@@ -66,7 +66,6 @@
 		<Unit filename="ExtractDocs.cpp" />
 		<Unit filename="manifest.xml" />
 		<Unit filename="update30" />
-		<Unit filename="update30.bat" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />

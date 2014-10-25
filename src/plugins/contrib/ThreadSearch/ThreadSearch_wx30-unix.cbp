@@ -97,8 +97,7 @@
 		<Unit filename="ThreadSearchViewManagerMessagesNotebook.h" />
 		<Unit filename="logging.h" />
 		<Unit filename="manifest.xml" />
-		<Unit filename="update" />
-		<Unit filename="update.bat" />
+		<Unit filename="update30" />
 		<Extensions>
 			<code_completion />
 			<envvars />

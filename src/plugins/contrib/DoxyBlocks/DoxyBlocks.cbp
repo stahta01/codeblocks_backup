@@ -84,7 +84,6 @@
 		<Unit filename="Expressions.h" />
 		<Unit filename="ExtractDocs.cpp" />
 		<Unit filename="manifest.xml" />
-		<Unit filename="update" />
 		<Unit filename="update.bat" />
 		<Unit filename="version.h" />
 		<Extensions>
