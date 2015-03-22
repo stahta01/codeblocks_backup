@@ -38,12 +38,5 @@ dist_pkgdata_DATA = console.cbp \
 		staticlib.cbp \
 		staticlib-sample.c \
 		staticlib.template \
-		wx-app-ash.cpp \
-		wx-app-ash.h \
-		wx-main-ash.cpp \
-		wx-main-ash.h \
-		wx-main-s.cpp \
-		wx-main-sh.cpp \
-		wx-main-sh.h \
 		wx_pch.h\
 		wxwidgets.png

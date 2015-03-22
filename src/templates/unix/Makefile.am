@@ -5,6 +5,4 @@ dist_pkgdata_DATA = glfw-static.cbp \
 		irr_linux.cbp \
 		ogre.template \
 		ogre_linux.cbp \
-		sdlapp.cbp \
-		wxwidgets.cbp \
-		wxwidgets.template
+		sdlapp.cbp
