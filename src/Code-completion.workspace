@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_file>
 	<Workspace title="Code-completion projects">
-		<Project filename="plugins/codecompletion/codecompletion.cbp" />
+		<Project filename="Code-completion.cbp" />
 		<Project filename="plugins/codecompletion/cctest.cbp">
-			<Depends filename="plugins/codecompletion/codecompletion.cbp" />
+			<Depends filename="Code-completion.cbp" />
 		</Project>
 	</Workspace>
 </CodeBlocks_workspace_file>
