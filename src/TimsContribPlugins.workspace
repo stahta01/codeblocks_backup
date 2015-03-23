@@ -5,6 +5,7 @@
 		<Project filename="plugins/contrib/Cscope/Cscope.cbp" />
 		<Project filename="plugins/contrib/devpak_plugin/DevPakPlugin.cbp" />
 		<Project filename="plugins/contrib/DoxyBlocks/DoxyBlocks.cbp" />
+		<Project filename="plugins/contrib/envvars/envvars.cbp" />
 		<Project filename="plugins/contrib/FileManager/FileManager.cbp" />
 		<Project filename="plugins/contrib/help_plugin/help-plugin.cbp" />
 		<Project filename="plugins/contrib/lib_finder/lib_finder.cbp" />
