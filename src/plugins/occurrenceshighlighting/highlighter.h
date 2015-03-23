@@ -6,17 +6,14 @@
 #ifndef HIGHLIGHTER_H
 #define HIGHLIGHTER_H
 
-// For compilers that support precompilation, includes <wx/wx.h>
-#include <wx/wxprec.h>
-
-#ifndef WX_PRECOMP
-    #include <wx/wx.h>
-#endif
 
 #include <set>
 
 #include <editor_hooks.h>
 
+class wxArrayInt;
+class wxColor;
+class wxString;
 class cbStyledTextCtrl;
 namespace
 {

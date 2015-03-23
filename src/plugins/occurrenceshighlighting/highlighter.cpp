@@ -7,9 +7,9 @@
  * $HeadURL$
  */
 
-#include "highlighter.h"
-
 #include <sdk.h> // Code::Blocks SDK
+
+#include "highlighter.h"
 
 #ifndef CB_PRECOMP
     #include <algorithm>
