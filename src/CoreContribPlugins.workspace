@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Core contrib plugins">
+		<Project filename="plugins/contrib/envvars/envvars.cbp" />
+		<Project filename="plugins/contrib/wxSmith/wxSmith.cbp" />
+		<Project filename="plugins/contrib/wxSmithAui/wxSmithAui.cbp">
+			<Depends filename="plugins/contrib/wxSmith/wxSmith.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

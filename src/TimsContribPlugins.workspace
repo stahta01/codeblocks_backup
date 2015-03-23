@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Tims contrib plugins">
+		<Project filename="plugins/contrib/CppCheck/CppCheck.cbp" />
+		<Project filename="plugins/contrib/Cscope/Cscope.cbp" />
+		<Project filename="plugins/contrib/devpak_plugin/DevPakPlugin.cbp" />
+		<Project filename="plugins/contrib/DoxyBlocks/DoxyBlocks.cbp" />
+		<Project filename="plugins/contrib/FileManager/FileManager.cbp" />
+		<Project filename="plugins/contrib/help_plugin/help-plugin.cbp" />
+		<Project filename="plugins/contrib/lib_finder/lib_finder.cbp" />
+		<Project filename="plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulator.cbp" />
+		<Project filename="plugins/contrib/regex_testbed/RegExTestbed.cbp" />
+		<Project filename="plugins/contrib/SpellChecker/SpellChecker.cbp" />
+		<Project filename="plugins/contrib/symtab/symtab.cbp" />
+		<Project filename="plugins/contrib/ToolsPlus/ToolsPlus.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
