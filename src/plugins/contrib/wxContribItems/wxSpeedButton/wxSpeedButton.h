@@ -27,7 +27,6 @@
 */
 
 #include "wx/defs.h"
-#include "wx/wxprec.h"
 #include "wx/control.h"
 #include "wx/settings.h"
 #include "wx/bitmap.h"
