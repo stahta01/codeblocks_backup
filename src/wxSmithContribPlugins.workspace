@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="wxSmith contrib plugins">
+		<Project filename="plugins/contrib/wxSmith/wxSmith.cbp" />
+		<Project filename="plugins/contrib/wxSmithAui/wxSmithAui.cbp">
+			<Depends filename="plugins/contrib/wxSmith/wxSmith.cbp" />
+		</Project>
+		<Project filename="plugins/contrib/wxContribItems/wxContribItems.cbp" />
+		<Project filename="plugins/contrib/wxSmithContribItems/wxSmithContribItems.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
