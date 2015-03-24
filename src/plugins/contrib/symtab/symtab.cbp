@@ -36,12 +36,12 @@
 			<Add option="-fpermissive" />
 			<Add option="-DBUILDING_PLUGIN" />
 			<Add option="-DCB_PRECOMP" />
-			<Add option="-DWX_PRECOMP" />
 			<Add option="-DHAVE_W32API_H" />
 			<Add option="-D__WXMSW__" />
 			<Add option="-DWXUSINGDLL" />
 			<Add option="-DcbDEBUG" />
 			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="../../../.objs/include" />
 			<Add directory="../../../include" />
 			<Add directory="../../../sdk/wxscintilla/include" />
 			<Add directory="$(#WX.include)" />
