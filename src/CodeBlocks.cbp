@@ -516,6 +516,33 @@
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
+			<Target title="EnvVars">
+				<Option output="devel/share/CodeBlocks/plugins/envvars" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="devel" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-DBUILDING_PLUGIN" />
+					<Add directory="include" />
+					<Add directory="include/scripting/include" />
+					<Add directory="include/scripting/sqplus" />
+					<Add directory="include/scripting/bindings" />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,--add-stdcall-alias" />
+					<Add option="-Wl,--no-undefined" />
+					<Add option="-mthreads" />
+					<Add library="codeblocks" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add directory="devel" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c if not exist devel\share\CodeBlocks mkdir devel\share\CodeBlocks" />
+					<Add after="zip -jq9 devel\share\CodeBlocks\envvars.zip plugins\envvars\resources\manifest.xml plugins\envvars\resources\*.xrc" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
 			<Target title="Occurrences Highlighting">
 				<Option output="devel/share/CodeBlocks/plugins/OccurrencesHighlighting" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel" />
@@ -717,9 +744,9 @@
 			</Environment>
 		</Build>
 		<VirtualTargets>
-			<Add alias="All" targets="tinyXML;AutoRevision;ConsoleRunner;Squirrel;Squirrel std lib;SqPlus;scintilla;wxpropgrid;sdk;src;Abbreviations;AStyle;Autosave;Compiler depslib;Compiler;Debugger;Class wizard;Default MIME handler;Occurrences Highlighting;Open files list;Projects-workspaces importer;Scripted wizard;To-do;XP look &amp; feel;" />
-			<Add alias="Core app &amp; plugins" targets="sdk;src;AStyle;Autosave;Compiler depslib;Compiler;Debugger;Class wizard;Default MIME handler;Occurrences Highlighting;Open files list;Projects-workspaces importer;Scripted wizard;To-do;XP look &amp; feel;" />
-			<Add alias="Third-party libs" targets="tinyXML;AutoRevision;ConsoleRunner;Squirrel;Squirrel std lib;SqPlus;scintilla;wxpropgrid;Compiler depslib;" />
+			<Add alias="All" targets="tinyXML;AutoRevision;ConsoleRunner;Squirrel;Squirrel std lib;SqPlus;scintilla;wxpropgrid;sdk;src;Abbreviations;AStyle;Autosave;Compiler depslib;Compiler;Debugger;Class wizard;Default MIME handler;EnvVars;Occurrences Highlighting;Open files list;Projects-workspaces importer;Scripted wizard;To-do;XP look &amp; feel;" />
+			<Add alias="Core app &amp; plugins" targets="sdk;src;AStyle;Autosave;Compiler depslib;Compiler;Debugger;Class wizard;Default MIME handler;EnvVars;Occurrences Highlighting;Open files list;Projects-workspaces importer;Scripted wizard;To-do;XP look &amp; feel;" />
+			<Add alias="Third-party libs" targets="tinyXML;AutoRevision;ConsoleRunner;Squirrel;Squirrel std lib;SqPlus;scintilla;Compiler depslib;wxpropgrid;" />
 		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
@@ -2171,6 +2198,39 @@
 		</Unit>
 		<Unit filename="plugins/defaultmimehandler/resources/manifest.xml">
 			<Option target="Default MIME handler" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars.cpp">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars.h">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_cfgdlg.cpp">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_cfgdlg.h">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_common.cpp">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_common.h">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_prjoptdlg.cpp">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/envvars_prjoptdlg.h">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/resources/envvars.xrc">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/resources/manifest.xml">
+			<Option target="EnvVars" />
+		</Unit>
+		<Unit filename="plugins/envvars/resources/project_settings.xrc">
+			<Option target="EnvVars" />
 		</Unit>
 		<Unit filename="plugins/occurrenceshighlighting/highlighter.cpp">
 			<Option target="Occurrences Highlighting" />
