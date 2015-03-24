@@ -8,7 +8,6 @@
 
 
 #if !defined(WX_PRECOMP)
-    #include <wx/wx.h>
     #include <wx/intl.h>
     #include <wx/laywin.h>
     #include <wx/image.h>
