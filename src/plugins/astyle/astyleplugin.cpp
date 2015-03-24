@@ -8,6 +8,7 @@
  */
 
 #include <sdk.h>
+#include <wx/menu.h>
 
 #ifndef CB_PRECOMP
     #include <algorithm>

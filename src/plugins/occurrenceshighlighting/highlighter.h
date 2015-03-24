@@ -9,9 +9,10 @@
 
 #include <set>
 
+#include <wx/dynarray.h>
+
 #include <editor_hooks.h>
 
-class wxArrayInt;
 class wxColor;
 class wxString;
 class cbStyledTextCtrl;

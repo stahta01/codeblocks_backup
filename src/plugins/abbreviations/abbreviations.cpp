@@ -9,6 +9,8 @@
 
 #include <sdk.h>
 
+#include <wx/textdlg.h> 
+
 #ifndef CB_PRECOMP
     #include <configurationpanel.h>
     #include <cbstyledtextctrl.h>

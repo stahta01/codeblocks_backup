@@ -8,6 +8,7 @@
  */
 
 #include <sdk.h> // Code::Blocks SDK
+#include <wx/menu.h>
 
 #ifndef CB_PRECOMP
     #include <algorithm>

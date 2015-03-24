@@ -9,6 +9,8 @@
 
 #include <sdk.h> // Code::Blocks SDK
 
+#include <wx/colour.h>
+
 #include "highlighter.h"
 
 #ifndef CB_PRECOMP

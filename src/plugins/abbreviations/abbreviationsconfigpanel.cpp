@@ -8,6 +8,8 @@
  */
 
 #include <sdk.h>
+#include <wx/textdlg.h>
+#include <wx/combobox.h>
 #include "abbreviationsconfigpanel.h"
 
 #ifndef CB_PRECOMP
