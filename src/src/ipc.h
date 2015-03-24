@@ -7,11 +7,6 @@
 #define IPC_H
 
 
-#include "sdk.h"
-
-#include <wx/wx.h>
-
-
 #ifdef __WIN32__
 
     #define WIN32_LEAN_AND_MEAN
