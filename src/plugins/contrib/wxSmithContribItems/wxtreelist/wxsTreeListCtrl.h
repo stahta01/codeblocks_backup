@@ -26,6 +26,10 @@
 #include    "wxsboolproperty.h"
 #include    "wx/treelistctrl.h"
 
+#if wxCHECK_VERSION(2,9,0)
+    using wxcode::wxTreeListCtrl;
+#endif
+
 /** \brief Class for wxsTreeCtrl widget */
 class wxsTreeListCtrl: public wxsWidget
 {
