@@ -32,3 +32,6 @@ Makefile.in
 /config.guess
 /config.sub
 *.cbTemp
+/TimS_binary-13.12/share/CodeBlocks/plugins/*.dll
+/TimS_binary-13.12/share/CodeBlocks/*.zip
+/TimS_binary-13.12/share/CodeBlocks/compilers/*.xml
