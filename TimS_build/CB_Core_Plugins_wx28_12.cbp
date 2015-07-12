@@ -51,7 +51,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -81,7 +81,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -109,7 +109,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -154,7 +154,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add library="depslib" />
 					<Add directory="$(#CB.bin)" />
 					<Add directory="$(#CB)/plugins/compilergcc/depslib" />
@@ -189,7 +189,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -220,7 +220,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -248,7 +248,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -276,7 +276,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -304,7 +304,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -332,7 +332,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -363,7 +363,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -393,7 +393,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -424,7 +424,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -452,7 +452,7 @@
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
+					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)_gcc_cb" />
 					<Add directory="$(#CB.bin)" />
 				</Linker>
 				<ExtraCommands>
@@ -496,7 +496,6 @@
 			<Add directory="$(#WX)/lib/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
 		</ResourceCompiler>
 		<Linker>
-			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add directory="base/tinyxml" />
 			<Add directory="$(#WX.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
