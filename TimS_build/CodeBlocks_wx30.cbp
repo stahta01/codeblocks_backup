@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="tinyXML">
-				<Option output="base/tinyxml/txml30" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/base/tinyxml/txml30" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
 				<Option type="2" />
@@ -46,7 +46,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Squirrel">
-				<Option output="sdk/scripting/lib/squirrel30" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/sdk/scripting/lib/squirrel30" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
 				<Option type="2" />
@@ -59,10 +59,10 @@
 				</Compiler>
 			</Target>
 			<Target title="Squirrel std lib">
-				<Option output="sdk/scripting/lib/sqstdlib30" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/sdk/scripting/lib/sqstdlib30" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
-				<Option external_deps="sdk/scripting/lib/libsquirrel30.a;" />
+				<Option external_deps="$(CB_LIB)/sdk/scripting/lib/libsquirrel30.a;" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option projectIncludeDirsRelation="1" />
@@ -73,10 +73,10 @@
 				</Compiler>
 			</Target>
 			<Target title="SqPlus">
-				<Option output="sdk/scripting/lib/sqplus30" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/sdk/scripting/lib/sqplus30" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
-				<Option external_deps="sdk/scripting/lib/libsquirrel30.a;sdk/scripting/lib/libsqstdlib30.a;" />
+				<Option external_deps="$(CB_LIB)/sdk/scripting/lib/libsquirrel30.a;$(CB_LIB)/sdk/scripting/lib/libsqstdlib30.a;" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option projectIncludeDirsRelation="1" />
@@ -87,7 +87,7 @@
 				</Compiler>
 			</Target>
 			<Target title="scintilla">
-				<Option output="devel30/wxscintilla_cb" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/wxscintilla_cb" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
 				<Option type="2" />
@@ -118,10 +118,10 @@
 				</Linker>
 			</Target>
 			<Target title="sdk">
-				<Option output="devel30/codeblocks" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/codeblocks" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="base/tinyxml/libtxml30.a;sdk/scripting/lib/libsquirrel30.a;sdk/scripting/lib/libsqstdlib30.a;sdk/scripting/lib/libsqplus30.a;devel30/libwxscintilla_cb.a;" />
+				<Option external_deps="$(CB_LIB)/base/tinyxml/libtxml30.a;$(CB_LIB)/sdk/scripting/lib/libsquirrel30.a;$(CB_LIB)/sdk/scripting/lib/libsqstdlib30.a;$(CB_LIB)/sdk/scripting/lib/libsqplus30.a;$(CB_LIB)/libwxscintilla_cb.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --verbose -p debug" />
@@ -157,8 +157,9 @@
 					<Add library="sqstdlib30" />
 					<Add library="squirrel30" />
 					<Add library="gdi32" />
-					<Add directory="devel30" />
-					<Add directory="sdk/scripting/lib" />
+					<Add directory="$(CB_BIN)" />
+					<Add directory="$(CB_LIB)" />
+					<Add directory="$(CB_LIB)/sdk/scripting/lib" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -168,10 +169,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="src">
-				<Option output="devel30/codeblocks" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/codeblocks" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -209,7 +210,7 @@
 					<Add library="rpcrt4" />
 					<Add library="advapi32" />
 					<Add library="wsock32" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -220,10 +221,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Abbreviations">
-				<Option output="devel30/share/CodeBlocks/plugins/abbreviations" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/abbreviations" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -246,7 +247,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -255,10 +256,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="AStyle">
-				<Option output="devel30/share/CodeBlocks/plugins/astyle" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/astyle" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -280,7 +281,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -289,10 +290,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Autosave">
-				<Option output="devel30/share/CodeBlocks/plugins/autosave" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/autosave" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -312,7 +313,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -321,7 +322,7 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Compiler depslib">
-				<Option output="plugins/compilergcc/depslib/depslib30" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/plugins/compilergcc/depslib/depslib30" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output=".objs30" />
 				<Option type="2" />
@@ -335,10 +336,10 @@
 				</Linker>
 			</Target>
 			<Target title="Compiler">
-				<Option output="devel30/share/CodeBlocks/plugins/compiler" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/compiler" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;plugins/compilergcc/depslib/libdepslib30.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;$(CB_LIB)/plugins/compilergcc/depslib/libdepslib30.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -362,8 +363,8 @@
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 					<Add library="depslib30" />
-					<Add directory="devel30" />
-					<Add directory="plugins/compilergcc/depslib" />
+					<Add directory="$(CB_BIN)" />
+					<Add directory="$(CB_LIB)/plugins/compilergcc/depslib" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -375,10 +376,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Debugger">
-				<Option output="devel30/share/CodeBlocks/plugins/debugger" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/debugger" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -400,7 +401,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -409,10 +410,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Code-completion">
-				<Option output="devel30/share/CodeBlocks/plugins/codecompletion" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/codecompletion" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -436,7 +437,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -445,10 +446,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Class wizard">
-				<Option output="devel30/share/CodeBlocks/plugins/classwizard" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/classwizard" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -468,7 +469,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -477,10 +478,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Default MIME handler">
-				<Option output="devel30/share/CodeBlocks/plugins/defaultmimehandler" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/defaultmimehandler" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -499,7 +500,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -508,10 +509,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Occurrences Highlighting">
-				<Option output="devel30/share/CodeBlocks/plugins/OccurrencesHighlighting" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/OccurrencesHighlighting" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -531,7 +532,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -540,10 +541,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Open files list">
-				<Option output="devel30/share/CodeBlocks/plugins/openfileslist" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/openfileslist" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -562,7 +563,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -571,10 +572,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Projects-workspaces importer">
-				<Option output="devel30/share/CodeBlocks/plugins/projectsimporter" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/projectsimporter" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -596,7 +597,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -605,10 +606,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Scripted wizard">
-				<Option output="devel30/share/CodeBlocks/plugins/scriptedwizard" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/scriptedwizard" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -630,7 +631,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -639,10 +640,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="To-do">
-				<Option output="devel30/share/CodeBlocks/plugins/todo" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/todo" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -665,7 +666,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -674,10 +675,10 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="XP look &amp; feel">
-				<Option output="devel30/share/CodeBlocks/plugins/xpmanifest" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/xpmanifest" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="devel30" />
 				<Option object_output=".objs30" />
-				<Option external_deps="devel30/libcodeblocks.a;" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
@@ -696,7 +697,7 @@
 					<Add option="-mthreads" />
 					<Add library="codeblocks" />
 					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-					<Add directory="devel30" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
@@ -741,7 +742,7 @@
 		</ResourceCompiler>
 		<Linker>
 			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
-			<Add directory="base/tinyxml" />
+			<Add directory="$(CB_LIB)/base/tinyxml" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
 		<Unit filename="../src/base/tinyxml/tinystr.cpp">
