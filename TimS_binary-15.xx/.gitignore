@@ -79,3 +79,6 @@
 /share/CodeBlocks/compilers/compiler_bcc.xml
 /share/CodeBlocks/compilers/compiler_avr-gcc.xml
 /codeblocks.dll
+/exchndl.dll
+/mingwm10.dll
+/wxmsw30u_gl_gcc_47Xsjlj.dll
