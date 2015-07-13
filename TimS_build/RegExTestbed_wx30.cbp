@@ -64,11 +64,11 @@
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 			<Add directory="../../../devel30" />
 		</Linker>
-		<Unit filename="RegExTestbed.cpp" />
-		<Unit filename="RegExTestbed.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="regexdlg.cpp" />
-		<Unit filename="regexdlg.h" />
+		<Unit filename="../src/plugins/contrib/regex_testbed/RegExTestbed.cpp" />
+		<Unit filename="../src/plugins/contrib/regex_testbed/RegExTestbed.h" />
+		<Unit filename="../src/plugins/contrib/regex_testbed/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/regex_testbed/regexdlg.cpp" />
+		<Unit filename="../src/plugins/contrib/regex_testbed/regexdlg.h" />
 		<Extensions>
 			<code_completion />
 			<wxsmith version="1">

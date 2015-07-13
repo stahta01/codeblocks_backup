@@ -60,15 +60,15 @@
 		<ExtraCommands>
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\ProjectOptionsManipulator.zip manifest.xml" />
 		</ExtraCommands>
-		<Unit filename="ProjectOptionsManipulator.cpp" />
-		<Unit filename="ProjectOptionsManipulator.h" />
-		<Unit filename="ProjectOptionsManipulatorDlg.cpp" />
-		<Unit filename="ProjectOptionsManipulatorDlg.h" />
-		<Unit filename="ProjectOptionsManipulatorResultDlg.cpp" />
-		<Unit filename="ProjectOptionsManipulatorResultDlg.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="wxsmith/ProjectOptionsManipulatorDlg.wxs" />
-		<Unit filename="wxsmith/ProjectOptionsManipulatorResultDlg.wxs" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulator.cpp" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulator.h" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulatorDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulatorDlg.h" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulatorResultDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/ProjectOptionsManipulatorResultDlg.h" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/wxsmith/ProjectOptionsManipulatorDlg.wxs" />
+		<Unit filename="../src/plugins/contrib/ProjectOptionsManipulator/wxsmith/ProjectOptionsManipulatorResultDlg.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

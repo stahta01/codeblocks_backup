@@ -54,14 +54,14 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="ReopenEditor.cpp" />
-		<Unit filename="ReopenEditor.h" />
-		<Unit filename="ReopenEditorConfDLg.cpp" />
-		<Unit filename="ReopenEditorConfDLg.h" />
-		<Unit filename="ReopenEditorListView.cpp" />
-		<Unit filename="ReopenEditorListView.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="wxsmith/ReopenEditorConfDLg.wxs" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditor.cpp" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditor.h" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditorConfDLg.cpp" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditorConfDLg.h" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditorListView.cpp" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/ReopenEditorListView.h" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/ReopenEditor/wxsmith/ReopenEditorConfDLg.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -56,9 +56,9 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\copystrings.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="copystrings.cpp" />
-		<Unit filename="copystrings.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/copystrings/copystrings.cpp" />
+		<Unit filename="../src/plugins/contrib/copystrings/copystrings.h" />
+		<Unit filename="../src/plugins/contrib/copystrings/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

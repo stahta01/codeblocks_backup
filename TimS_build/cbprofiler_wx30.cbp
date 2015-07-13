@@ -56,15 +56,15 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\codeblocks\Profiler.zip resources\manifest.xml resources\*.xrc" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="cbprofiler.cpp" />
-		<Unit filename="cbprofiler.h" />
-		<Unit filename="cbprofilerconfig.cpp" />
-		<Unit filename="cbprofilerconfig.h" />
-		<Unit filename="cbprofilerexec.cpp" />
-		<Unit filename="cbprofilerexec.h" />
-		<Unit filename="resources/configuration.xrc" />
-		<Unit filename="resources/main_dialog.xrc" />
-		<Unit filename="resources/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofiler.cpp" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofiler.h" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofilerconfig.cpp" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofilerconfig.h" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofilerexec.cpp" />
+		<Unit filename="../src/plugins/contrib/profiler/cbprofilerexec.h" />
+		<Unit filename="../src/plugins/contrib/profiler/resources/configuration.xrc" />
+		<Unit filename="../src/plugins/contrib/profiler/resources/main_dialog.xrc" />
+		<Unit filename="../src/plugins/contrib/profiler/resources/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

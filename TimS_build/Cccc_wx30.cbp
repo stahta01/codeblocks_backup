@@ -56,8 +56,8 @@
 			<Add after="zip -j9 ../../../devel30/share/codeblocks/Cccc.zip resources/manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="Cccc.cpp" />
-		<Unit filename="Cccc.h" />
+		<Unit filename="../src/plugins/contrib/Cccc/Cccc.cpp" />
+		<Unit filename="../src/plugins/contrib/Cccc/Cccc.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

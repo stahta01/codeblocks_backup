@@ -60,24 +60,24 @@
 		<ExtraCommands>
 			<Add after="zip -j9 ..\..\..\devel30\share\codeblocks\FileManager.zip manifest.xml Resources\fileexplorersettings.xrc Resources\CommitBrowser.xrc" />
 		</ExtraCommands>
-		<Unit filename="CommitBrowser.cpp" />
-		<Unit filename="CommitBrowser.h" />
-		<Unit filename="FileExplorer.cpp" />
-		<Unit filename="FileExplorer.h" />
-		<Unit filename="FileExplorerSettings.cpp" />
-		<Unit filename="FileExplorerSettings.h" />
-		<Unit filename="FileExplorerUpdater.cpp" />
-		<Unit filename="FileExplorerUpdater.h" />
-		<Unit filename="FileManager.cpp" />
-		<Unit filename="FileManager.h" />
-		<Unit filename="Resources/CommitBrowser.xrc" />
-		<Unit filename="Resources/fileexplorersettings.fbp" />
-		<Unit filename="Resources/fileexplorersettings.xrc" />
-		<Unit filename="directorymonitor.cpp" />
-		<Unit filename="directorymonitor.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="se_globals.cpp" />
-		<Unit filename="se_globals.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/CommitBrowser.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/CommitBrowser.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorer.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorer.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorerSettings.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorerSettings.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorerUpdater.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileExplorerUpdater.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileManager.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/FileManager.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/Resources/CommitBrowser.xrc" />
+		<Unit filename="../src/plugins/contrib/FileManager/Resources/fileexplorersettings.fbp" />
+		<Unit filename="../src/plugins/contrib/FileManager/Resources/fileexplorersettings.xrc" />
+		<Unit filename="../src/plugins/contrib/FileManager/directorymonitor.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/directorymonitor.h" />
+		<Unit filename="../src/plugins/contrib/FileManager/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/FileManager/se_globals.cpp" />
+		<Unit filename="../src/plugins/contrib/FileManager/se_globals.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

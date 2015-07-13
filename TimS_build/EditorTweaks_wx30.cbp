@@ -52,12 +52,12 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="EditorTweaks.cpp" />
-		<Unit filename="EditorTweaks.h" />
-		<Unit filename="EditorTweaksConfDlg.cpp" />
-		<Unit filename="EditorTweaksConfDlg.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="wxsmith/EditorTweaksConfDlg.wxs" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/EditorTweaks.cpp" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/EditorTweaks.h" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/EditorTweaksConfDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/EditorTweaksConfDlg.h" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/EditorTweaks/wxsmith/EditorTweaksConfDlg.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

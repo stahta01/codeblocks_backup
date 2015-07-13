@@ -56,13 +56,13 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="IncrementalSearch.cpp" />
-		<Unit filename="IncrementalSearch.h" />
-		<Unit filename="IncrementalSearchConfDlg.cpp" />
-		<Unit filename="IncrementalSearchConfDlg.h" />
-		<Unit filename="IncrementalSearchConfDlg.xrc" />
-		<Unit filename="IncrementalSearchToolbar.xrc" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearch.cpp" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearch.h" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearchConfDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearchConfDlg.h" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearchConfDlg.xrc" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/IncrementalSearchToolbar.xrc" />
+		<Unit filename="../src/plugins/contrib/IncrementalSearch/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

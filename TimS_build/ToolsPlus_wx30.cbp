@@ -65,22 +65,22 @@
 			<Add after="update30.bat" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="CmdConfigDialog.cpp" />
-		<Unit filename="CmdConfigDialog.h" />
-		<Unit filename="PipedProcessCtrl.cpp" />
-		<Unit filename="PipedProcessCtrl.h" />
-		<Unit filename="Resources/dialogs.fbp" />
-		<Unit filename="ShellCtrlBase.cpp" />
-		<Unit filename="ShellCtrlBase.h" />
-		<Unit filename="ToolsPlus.cpp" />
-		<Unit filename="ToolsPlus.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="se_globals.cpp" />
-		<Unit filename="se_globals.h" />
-		<Unit filename="shellproperties.cpp" />
-		<Unit filename="shellproperties.h" />
-		<Unit filename="update30" />
-		<Unit filename="update30.bat" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/CmdConfigDialog.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/CmdConfigDialog.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/PipedProcessCtrl.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/PipedProcessCtrl.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/Resources/dialogs.fbp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/ShellCtrlBase.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/ShellCtrlBase.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/ToolsPlus.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/ToolsPlus.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/se_globals.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/se_globals.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/shellproperties.cpp" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/shellproperties.h" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/update30" />
+		<Unit filename="../src/plugins/contrib/ToolsPlus/update30.bat" />
 		<Extensions>
 			<code_completion />
 			<envvars />

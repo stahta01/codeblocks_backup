@@ -49,14 +49,14 @@
 			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
-		<Unit filename="Addr2LineUIApp.cpp" />
-		<Unit filename="Addr2LineUIApp.h" />
-		<Unit filename="Addr2LineUIMain.cpp" />
-		<Unit filename="Addr2LineUIMain.h" />
-		<Unit filename="resource.rc">
+		<Unit filename="../src/tools/Addr2LineUI/Addr2LineUIApp.cpp" />
+		<Unit filename="../src/tools/Addr2LineUI/Addr2LineUIApp.h" />
+		<Unit filename="../src/tools/Addr2LineUI/Addr2LineUIMain.cpp" />
+		<Unit filename="../src/tools/Addr2LineUI/Addr2LineUIMain.h" />
+		<Unit filename="../src/tools/Addr2LineUI/resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
-		<Unit filename="wxsmith/Addr2LineUIDialog.wxs" />
+		<Unit filename="../src/tools/Addr2LineUI/wxsmith/Addr2LineUIDialog.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

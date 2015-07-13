@@ -57,13 +57,13 @@
 			<Add after="zip -j9 ../../../devel30/share/codeblocks/CppCheck.zip resources/manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="ConfigPanel.cpp" />
-		<Unit filename="ConfigPanel.h" />
-		<Unit filename="CppCheck.cpp" />
-		<Unit filename="CppCheck.h" />
-		<Unit filename="CppCheckListLog.cpp" />
-		<Unit filename="CppCheckListLog.h" />
-		<Unit filename="wxsmith/ConfigPanel.wxs" />
+		<Unit filename="../src/plugins/contrib/CppCheck/ConfigPanel.cpp" />
+		<Unit filename="../src/plugins/contrib/CppCheck/ConfigPanel.h" />
+		<Unit filename="../src/plugins/contrib/CppCheck/CppCheck.cpp" />
+		<Unit filename="../src/plugins/contrib/CppCheck/CppCheck.h" />
+		<Unit filename="../src/plugins/contrib/CppCheck/CppCheckListLog.cpp" />
+		<Unit filename="../src/plugins/contrib/CppCheck/CppCheckListLog.h" />
+		<Unit filename="../src/plugins/contrib/CppCheck/wxsmith/ConfigPanel.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

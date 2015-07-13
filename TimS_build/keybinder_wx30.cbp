@@ -58,14 +58,14 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\keybinder.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="cbkeybinder.cpp" />
-		<Unit filename="cbkeybinder.h" />
-		<Unit filename="debugging.h" />
-		<Unit filename="keybinder.cpp" />
-		<Unit filename="keybinder.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="menuutils.cpp" />
-		<Unit filename="menuutils.h" />
+		<Unit filename="../src/plugins/contrib/keybinder/cbkeybinder.cpp" />
+		<Unit filename="../src/plugins/contrib/keybinder/cbkeybinder.h" />
+		<Unit filename="../src/plugins/contrib/keybinder/debugging.h" />
+		<Unit filename="../src/plugins/contrib/keybinder/keybinder.cpp" />
+		<Unit filename="../src/plugins/contrib/keybinder/keybinder.h" />
+		<Unit filename="../src/plugins/contrib/keybinder/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/keybinder/menuutils.cpp" />
+		<Unit filename="../src/plugins/contrib/keybinder/menuutils.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

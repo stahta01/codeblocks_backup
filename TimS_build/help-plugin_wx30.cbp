@@ -104,170 +104,170 @@
 			<Add directory="../../../devel30" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
-		<Unit filename="HelpConfigDialog.cpp">
+		<Unit filename="../src/plugins/contrib/help_plugin/HelpConfigDialog.cpp">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="HelpConfigDialog.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/HelpConfigDialog.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="MANFrame.cpp">
+		<Unit filename="../src/plugins/contrib/help_plugin/MANFrame.cpp">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="MANFrame.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/MANFrame.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="bzip2/blocksort.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/blocksort.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/bzlib.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/bzlib.h">
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib_private.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/bzlib_private.h">
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/compress.c">
-			<Option compilerVar="CC" />
-			<Option target="bzip2" />
-		</Unit>
-		<Unit filename="bzip2/crctable.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/compress.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/decompress.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/crctable.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/huffman.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/decompress.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="bzip2/randtable.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/huffman.c">
 			<Option compilerVar="CC" />
 			<Option target="bzip2" />
 		</Unit>
-		<Unit filename="defs.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/bzip2/randtable.c">
+			<Option compilerVar="CC" />
+			<Option target="bzip2" />
+		</Unit>
+		<Unit filename="../src/plugins/contrib/help_plugin/defs.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="help_common.cpp">
+		<Unit filename="../src/plugins/contrib/help_plugin/help_common.cpp">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="help_common.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/help_common.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="help_plugin.cpp">
+		<Unit filename="../src/plugins/contrib/help_plugin/help_plugin.cpp">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="help_plugin.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/help_plugin.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="help_plugin.xrc">
+		<Unit filename="../src/plugins/contrib/help_plugin/help_plugin.xrc">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="man2html.cpp">
+		<Unit filename="../src/plugins/contrib/help_plugin/man2html.cpp">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="man2html.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/man2html.h">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="manifest.xml">
+		<Unit filename="../src/plugins/contrib/help_plugin/manifest.xml">
 			<Option target="help_plugin" />
 		</Unit>
-		<Unit filename="zlib/adler32.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/adler32.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/compress.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/compress.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/crc32.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/crc32.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/crc32.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/crc32.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/deflate.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/deflate.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/deflate.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/deflate.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/gzclose.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/gzclose.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/gzguts.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/gzguts.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/gzlib.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/gzlib.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/gzread.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/gzread.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/gzwrite.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/gzwrite.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/infback.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/infback.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inffast.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inffast.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inffast.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inffast.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inffixed.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inffixed.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inflate.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inflate.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inflate.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inflate.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inftrees.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inftrees.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/inftrees.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/inftrees.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/trees.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/trees.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/trees.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/trees.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/uncompr.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/uncompr.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/zconf.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/zconf.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/zlib.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/zlib.h">
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/zutil.c">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/zutil.c">
 			<Option compilerVar="CC" />
 			<Option target="zlib" />
 		</Unit>
-		<Unit filename="zlib/zutil.h">
+		<Unit filename="../src/plugins/contrib/help_plugin/zlib/zutil.h">
 			<Option target="zlib" />
 		</Unit>
 		<Extensions>

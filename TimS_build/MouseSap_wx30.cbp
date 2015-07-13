@@ -54,9 +54,9 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="MouseSap.cpp" />
-		<Unit filename="MouseSap.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/MouseSap/MouseSap.cpp" />
+		<Unit filename="../src/plugins/contrib/MouseSap/MouseSap.h" />
+		<Unit filename="../src/plugins/contrib/MouseSap/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -120,244 +120,244 @@
 			<Add option="-DWXUSINGDLL" />
 			<Add option="-DwxUSE_UNICODE" />
 		</Compiler>
-		<Unit filename="DictionariesNeededDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/DictionariesNeededDialog.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="DictionariesNeededDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/DictionariesNeededDialog.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="HunspellInterface.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/HunspellInterface.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="HunspellInterface.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/HunspellInterface.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="MySpellingDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/MySpellingDialog.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="MySpellingDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/MySpellingDialog.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="OnlineSpellChecker.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/OnlineSpellChecker.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="OnlineSpellChecker.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/OnlineSpellChecker.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckHelper.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckHelper.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckHelper.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckHelper.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckSettingsPanel.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckSettingsPanel.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckSettingsPanel.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckSettingsPanel.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckSettingsPanel.xrc">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckSettingsPanel.xrc">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckerConfig.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckerConfig.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckerConfig.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckerConfig.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckerPlugin.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckerPlugin.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="SpellCheckerPlugin.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/SpellCheckerPlugin.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="StatusField.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/StatusField.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="StatusField.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/StatusField.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="Thesaurus.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/Thesaurus.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="Thesaurus.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/Thesaurus.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="ThesaurusDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/ThesaurusDialog.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="ThesaurusDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/ThesaurusDialog.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/affentry.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/affentry.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/affentry.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/affentry.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/affixmgr.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/affixmgr.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/affixmgr.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/affixmgr.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/atypes.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/atypes.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/baseaffix.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/baseaffix.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/csutil.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/csutil.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/csutil.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/csutil.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/dictmgr.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/dictmgr.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/dictmgr.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/dictmgr.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/filemgr.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/filemgr.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/filemgr.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/filemgr.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hashmgr.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hashmgr.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hashmgr.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hashmgr.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/htypes.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/htypes.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunspell.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunspell.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunspell.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunspell.h">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunspell.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunspell.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunvisapi.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunvisapi.h">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunzip.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunzip.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/hunzip.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/hunzip.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/langnum.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/langnum.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/phonet.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/phonet.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/phonet.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/phonet.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/replist.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/replist.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/replist.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/replist.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/suggestmgr.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/suggestmgr.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/suggestmgr.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/suggestmgr.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/utf_info.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/utf_info.cxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="hunspell/src/hunspell/w_char.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/hunspell/src/hunspell/w_char.hxx">
 			<Option target="hunspell" />
 		</Unit>
-		<Unit filename="manifest.xml">
+		<Unit filename="../src/plugins/contrib/SpellChecker/manifest.xml">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="mythes.cxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/mythes.cxx">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="mythes.hxx">
+		<Unit filename="../src/plugins/contrib/SpellChecker/mythes.hxx">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="wxThes.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxThes.cpp">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="wxThes.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxThes.h">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="wxsmith/SpellCheckSettingsPanel.wxs">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxsmith/SpellCheckSettingsPanel.wxs">
 			<Option target="plugin" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/PersonalDictionary.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/PersonalDictionary.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckCmdLineInterface.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckCmdLineInterface.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckDialogInterface.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckDialogInterface.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckEngineInterface.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckEngineInterface.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckEngineOption.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckEngineOption.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckUserInterface.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckUserInterface.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/SpellCheckerOptionsDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/SpellCheckerOptionsDialog.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/XmlPersonalDictionaryDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/XmlPersonalDictionaryDialog.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/XmlSpellCheckDialog.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/XmlSpellCheckDialog.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/include/exports.h">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/include/exports.h">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/PersonalDictionary.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/PersonalDictionary.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckCmdLineInterface.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckCmdLineInterface.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckDialogInterface.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckDialogInterface.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckEngineInterface.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckEngineInterface.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckEngineOption.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckEngineOption.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckUserInterface.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckUserInterface.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/SpellCheckerOptionsDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/SpellCheckerOptionsDialog.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/XmlPersonalDictionaryDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/XmlPersonalDictionaryDialog.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/XmlSpellCheckDialog.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/XmlSpellCheckDialog.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/exports.cpp">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/exports.cpp">
 			<Option target="wxSpellChecker" />
 		</Unit>
-		<Unit filename="wxspellchecker/src/open.xpm">
+		<Unit filename="../src/plugins/contrib/SpellChecker/wxspellchecker/src/open.xpm">
 			<Option target="wxSpellChecker" />
 		</Unit>
 		<Extensions>

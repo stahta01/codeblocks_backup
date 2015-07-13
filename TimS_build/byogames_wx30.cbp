@@ -58,21 +58,21 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\byogames.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="byocbtris.cpp" />
-		<Unit filename="byocbtris.h" />
-		<Unit filename="byoconf.cpp" />
-		<Unit filename="byoconf.h" />
-		<Unit filename="byogame.cpp" />
-		<Unit filename="byogame.h" />
-		<Unit filename="byogamebase.cpp" />
-		<Unit filename="byogamebase.h" />
-		<Unit filename="byogames.cpp" />
-		<Unit filename="byogames.h" />
-		<Unit filename="byogameselect.cpp" />
-		<Unit filename="byogameselect.h" />
-		<Unit filename="byosnake.cpp" />
-		<Unit filename="byosnake.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/byogames/byocbtris.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byocbtris.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byoconf.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byoconf.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byogame.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byogame.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byogamebase.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byogamebase.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byogames.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byogames.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byogameselect.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byogameselect.h" />
+		<Unit filename="../src/plugins/contrib/byogames/byosnake.cpp" />
+		<Unit filename="../src/plugins/contrib/byogames/byosnake.h" />
+		<Unit filename="../src/plugins/contrib/byogames/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<wxsmith version="1">

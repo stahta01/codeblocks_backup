@@ -55,13 +55,13 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\DragScroll.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="dragscroll.cpp" />
-		<Unit filename="dragscroll.h" />
-		<Unit filename="dragscrollcfg.cpp" />
-		<Unit filename="dragscrollcfg.h" />
-		<Unit filename="dragscrollevent.cpp" />
-		<Unit filename="dragscrollevent.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscroll.cpp" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscroll.h" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscrollcfg.cpp" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscrollcfg.h" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscrollevent.cpp" />
+		<Unit filename="../src/plugins/contrib/dragscroll/dragscrollevent.h" />
+		<Unit filename="../src/plugins/contrib/dragscroll/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

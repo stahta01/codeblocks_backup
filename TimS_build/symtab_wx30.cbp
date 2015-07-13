@@ -60,15 +60,15 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\codeblocks\SymTab.zip resources\manifest.xml resources\*.xrc" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="resources/config_dialog.xrc" />
-		<Unit filename="resources/exec_dialog.xrc" />
-		<Unit filename="resources/manifest.xml" />
-		<Unit filename="symtab.cpp" />
-		<Unit filename="symtab.h" />
-		<Unit filename="symtabconfig.cpp" />
-		<Unit filename="symtabconfig.h" />
-		<Unit filename="symtabexec.cpp" />
-		<Unit filename="symtabexec.h" />
+		<Unit filename="../src/plugins/contrib/symtab/resources/config_dialog.xrc" />
+		<Unit filename="../src/plugins/contrib/symtab/resources/exec_dialog.xrc" />
+		<Unit filename="../src/plugins/contrib/symtab/resources/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/symtab/symtab.cpp" />
+		<Unit filename="../src/plugins/contrib/symtab/symtab.h" />
+		<Unit filename="../src/plugins/contrib/symtab/symtabconfig.cpp" />
+		<Unit filename="../src/plugins/contrib/symtab/symtabconfig.h" />
+		<Unit filename="../src/plugins/contrib/symtab/symtabexec.cpp" />
+		<Unit filename="../src/plugins/contrib/symtab/symtabexec.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

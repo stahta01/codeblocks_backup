@@ -77,92 +77,92 @@
 			<Add directory="bzip2" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
-		<Unit filename="bzip2/blocksort.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/blocksort.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/bzlib.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/bzlib.h">
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/bzlib_private.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/bzlib_private.h">
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/compress.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/compress.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/crctable.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/crctable.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/decompress.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/decompress.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/huffman.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/huffman.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="bzip2/randtable.c">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/bzip2/randtable.c">
 			<Option compilerVar="CC" />
 			<Option target="libbz2" />
 		</Unit>
-		<Unit filename="cbiniparser.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/cbiniparser.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="cbiniparser.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/cbiniparser.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="cbnetwork.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/cbnetwork.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="cbnetwork.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/cbnetwork.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="conf.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/conf.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="conf.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/conf.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="crc32.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/crc32.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="crc32.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/crc32.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="devpakinstaller.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/devpakinstaller.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="devpakinstaller.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/devpakinstaller.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="devpakupdater.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/devpakupdater.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="devpakupdater.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/devpakupdater.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="manifest.xml">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/manifest.xml">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="mytar.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/mytar.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="mytar.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/mytar.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="update.xrc">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/update.xrc">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="updatedlg.cpp">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/updatedlg.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="updatedlg.h">
+		<Unit filename="../src/plugins/contrib/devpak_plugin/updatedlg.h">
 			<Option target="default" />
 		</Unit>
 		<Extensions>

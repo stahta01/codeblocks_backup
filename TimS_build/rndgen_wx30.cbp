@@ -54,9 +54,9 @@
 		<Linker>
 			<Add option="-Wl,--enable-auto-image-base" />
 		</Linker>
-		<Unit filename="manifest.xml" />
-		<Unit filename="rndgen.cpp" />
-		<Unit filename="rndgen.h" />
+		<Unit filename="../src/plugins/contrib/rndgen/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/rndgen/rndgen.cpp" />
+		<Unit filename="../src/plugins/contrib/rndgen/rndgen.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

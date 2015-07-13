@@ -48,11 +48,11 @@
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 			<Add directory="../../base/tinyxml" />
 		</Linker>
-		<Unit filename="app.cpp" />
-		<Unit filename="app.h" />
-		<Unit filename="mainframe.cpp" />
-		<Unit filename="mainframe.h" />
-		<Unit filename="wxsmith/MainFrame.wxs" />
+		<Unit filename="../src/tools/cb_share_config/app.cpp" />
+		<Unit filename="../src/tools/cb_share_config/app.h" />
+		<Unit filename="../src/tools/cb_share_config/mainframe.cpp" />
+		<Unit filename="../src/tools/cb_share_config/mainframe.h" />
+		<Unit filename="../src/tools/cb_share_config/wxsmith/MainFrame.wxs" />
 		<Extensions>
 			<code_completion />
 			<wxsmith version="1">

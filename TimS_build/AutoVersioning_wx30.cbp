@@ -58,18 +58,18 @@
 			<Add option="-Wall" />
 			<Add option="$(#CB_RELEASE_TYPE)" />
 		</Compiler>
-		<Unit filename="AutoVersioning.cpp" />
-		<Unit filename="AutoVersioning.h" />
-		<Unit filename="avChangesDlg.cpp" />
-		<Unit filename="avChangesDlg.h" />
-		<Unit filename="avConfig.h" />
-		<Unit filename="avHeader.cpp" />
-		<Unit filename="avHeader.h" />
-		<Unit filename="avSvnRevision.cpp" />
-		<Unit filename="avSvnRevision.h" />
-		<Unit filename="avVersionEditorDlg.cpp" />
-		<Unit filename="avVersionEditorDlg.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/AutoVersioning.cpp" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/AutoVersioning.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avChangesDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avChangesDlg.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avConfig.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avHeader.cpp" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avHeader.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avSvnRevision.cpp" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avSvnRevision.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avVersionEditorDlg.cpp" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/avVersionEditorDlg.h" />
+		<Unit filename="../src/plugins/contrib/AutoVersioning/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -56,26 +56,26 @@
 			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add library="codeblocks" />
 		</Linker>
-		<Unit filename="bindings.cpp" />
-		<Unit filename="bindings.h" />
-		<Unit filename="configuration.cpp" />
-		<Unit filename="configuration.h" />
-		<Unit filename="defaults.cpp" />
-		<Unit filename="execution.cpp" />
-		<Unit filename="execution.h" />
-		<Unit filename="fileanalysis.cpp" />
-		<Unit filename="fileanalysis.h" />
-		<Unit filename="headerfixup.cpp" />
-		<Unit filename="headerfixup.h" />
-		<Unit filename="helper.cpp" />
-		<Unit filename="helper.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="protocol.cpp" />
-		<Unit filename="protocol.h" />
-		<Unit filename="todo.txt" />
-		<Unit filename="wxsmith/configuration.wxs" />
-		<Unit filename="wxsmith/execution.wxs" />
-		<Unit filename="wxsmith/protocol.wxs" />
+		<Unit filename="../src/plugins/contrib/headerfixup/bindings.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/bindings.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/configuration.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/configuration.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/defaults.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/execution.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/execution.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/fileanalysis.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/fileanalysis.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/headerfixup.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/headerfixup.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/helper.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/helper.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/headerfixup/protocol.cpp" />
+		<Unit filename="../src/plugins/contrib/headerfixup/protocol.h" />
+		<Unit filename="../src/plugins/contrib/headerfixup/todo.txt" />
+		<Unit filename="../src/plugins/contrib/headerfixup/wxsmith/configuration.wxs" />
+		<Unit filename="../src/plugins/contrib/headerfixup/wxsmith/execution.wxs" />
+		<Unit filename="../src/plugins/contrib/headerfixup/wxsmith/protocol.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />

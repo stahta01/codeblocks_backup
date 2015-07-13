@@ -116,484 +116,484 @@
 			<Add option="-mthreads" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
-		<Unit filename="BaseExporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/BaseExporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="BaseExporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/BaseExporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="HTMLExporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/HTMLExporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="HTMLExporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/HTMLExporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="ODTExporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/ODTExporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="ODTExporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/ODTExporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="PDFExporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/PDFExporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="PDFExporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/PDFExporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="RTFExporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/RTFExporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="RTFExporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/RTFExporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="exporter.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/exporter.cpp">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="exporter.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/exporter.h">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="manifest.xml">
+		<Unit filename="../src/plugins/contrib/source_exporter/manifest.xml">
 			<Option target="default" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfannotation.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfannotation.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfarraydouble.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfarraydouble.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfarraytypes.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfarraytypes.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfbarcode.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfbarcode.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfbookmark.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfbookmark.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcffdecoder.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcffdecoder.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcffindex.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcffindex.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcjkfontdata.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcjkfontdata.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcolour.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcolour.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcoonspatchmesh.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcoonspatchmesh.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfcorefontdata.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfcorefontdata.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdc.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdc.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdc28.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdc28.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdc29.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdc29.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdoc.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdoc.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdocdef.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdocdef.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfdocument.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfdocument.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfencoding.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfencoding.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfencrypt.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfencrypt.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffont.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffont.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdata.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdata.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdatacore.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdatacore.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdataopentype.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdataopentype.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdatatruetype.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdatatruetype.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdatatype0.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdatatype0.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdatatype1.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdatatype1.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdescription.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdescription.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontdetails.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontdetails.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontextended.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontextended.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontmacosx.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontmacosx.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontmanager.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontmanager.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontparser.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontparser.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontparsertruetype.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontparsertruetype.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontparsertype1.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontparsertype1.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontsubsetcff.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontsubsetcff.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontsubsettruetype.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontsubsettruetype.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdffontvolt.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdffontvolt.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfform.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfform.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfgradient.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfgradient.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfgraphics.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfgraphics.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfimage.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfimage.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfinfo.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfinfo.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdflayer.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdflayer.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdflinestyle.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdflinestyle.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdflinks.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdflinks.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfobjects.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfobjects.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfparser.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfparser.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfpattern.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfpattern.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfprint.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfprint.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfproperties.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfproperties.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfrijndael.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfrijndael.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfshape.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfshape.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfspotcolour.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfspotcolour.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdftemplate.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdftemplate.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfutility.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfutility.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/include/wx/pdfxml.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/include/wx/pdfxml.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/makefont/makefont.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/makefont/makefont.cpp">
 			<Option target="makefont" />
 		</Unit>
-		<Unit filename="wxPdfDocument/makefont/makefont.rc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/makefont/makefont.rc">
 			<Option compilerVar="WINDRES" />
 			<Option target="makefont" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/barcodes.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/barcodes.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/bookmark.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/bookmark.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/charting.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/charting.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/cjktest.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/cjktest.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/clipping.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/clipping.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/drawing.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/drawing.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/glyphwriting.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/glyphwriting.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/gradients.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/gradients.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/indicfonts.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/indicfonts.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/jsform.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/jsform.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/kerning.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/kerning.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/labels.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/labels.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/layers.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/layers.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/minimal.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/minimal.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/minimal.rc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/minimal.rc">
 			<Option compilerVar="WINDRES" />
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/protection.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/protection.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/rotation.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/rotation.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/templates.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/templates.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/transformation.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/transformation.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/transparency.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/transparency.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial1.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial1.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial2.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial2.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial3.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial3.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial4.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial4.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial5.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial5.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial6.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial6.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/tutorial7.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/tutorial7.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/wmf.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/wmf.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/minimal/xmlwrite.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/minimal/xmlwrite.cpp">
 			<Option target="minimal" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/mondrian.ico">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/mondrian.ico">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/mondrian.xpm">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/mondrian.xpm">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/printing.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/printing.cpp">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/printing.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/printing.h">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/printing.rc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/printing.rc">
 			<Option compilerVar="WINDRES" />
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/smile.jpg">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/smile.jpg">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/samples/pdfdc/up.gif">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/samples/pdfdc/up.gif">
 			<Option target="pdfdc" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfannotation.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfannotation.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfbarcode.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfbarcode.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcffdecoder.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcffdecoder.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcffindex.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcffindex.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcjkfontdata.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcjkfontdata.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcmapdata.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcmapdata.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcodepagedata.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcodepagedata.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcolour.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcolour.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcolourdata.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcolourdata.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcorefontdata.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcorefontdata.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfcorefontkerning.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfcorefontkerning.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfdc.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfdc.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfdc28.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfdc28.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfdc29.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfdc29.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfdecode.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfdecode.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfdocument.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfdocument.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfencoding.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfencoding.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfencrypt.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfencrypt.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffont.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffont.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdata.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdata.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdatacore.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdatacore.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdataopentype.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdataopentype.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdatatruetype.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdatatruetype.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdatatype0.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdatatype0.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdatatype1.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdatatype1.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdescription.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdescription.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontdetails.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontdetails.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontextended.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontextended.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontmanager.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontmanager.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontparser.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontparser.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontparsertruetype.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontparsertruetype.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontparsertype1.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontparsertype1.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontsubsetcff.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontsubsetcff.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontsubsettruetype.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontsubsettruetype.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdffontvolt.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdffontvolt.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfform.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfform.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfglyphnames.inc">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfglyphnames.inc">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfgradient.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfgradient.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfgraphics.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfgraphics.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfimage.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfimage.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfkernel.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfkernel.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdflayer.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdflayer.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfobjects.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfobjects.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfocg.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfocg.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfparser.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfparser.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfpattern.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfpattern.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfprint.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfprint.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfrijndael.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfrijndael.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdftemplate.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdftemplate.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfutility.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfutility.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/pdfxml.cpp">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/pdfxml.cpp">
 			<Option target="wxPdfDocument" />
 		</Unit>
-		<Unit filename="wxPdfDocument/src/wxmemdbg.h">
+		<Unit filename="../src/plugins/contrib/source_exporter/wxPdfDocument/src/wxmemdbg.h">
 			<Option target="wxPdfDocument" />
 		</Unit>
 		<Extensions>

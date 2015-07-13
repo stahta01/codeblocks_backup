@@ -184,67 +184,67 @@
 			<Add directory="../../../devel30" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
-		<Unit filename="SmartIndentCpp.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentCpp.cpp">
 			<Option target="SmartIndentCpp" />
 		</Unit>
-		<Unit filename="SmartIndentCpp.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentCpp.h">
 			<Option target="SmartIndentCpp" />
 		</Unit>
-		<Unit filename="SmartIndentFortran.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentFortran.cpp">
 			<Option target="SmartIndentFortran" />
 		</Unit>
-		<Unit filename="SmartIndentFortran.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentFortran.h">
 			<Option target="SmartIndentFortran" />
 		</Unit>
-		<Unit filename="SmartIndentHDL.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentHDL.cpp">
 			<Option target="SmartIndentHDL" />
 		</Unit>
-		<Unit filename="SmartIndentHDL.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentHDL.h">
 			<Option target="SmartIndentHDL" />
 		</Unit>
-		<Unit filename="SmartIndentLua.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentLua.cpp">
 			<Option target="SmartIndentLua" />
 		</Unit>
-		<Unit filename="SmartIndentLua.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentLua.h">
 			<Option target="SmartIndentLua" />
 		</Unit>
-		<Unit filename="SmartIndentPascal.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentPascal.cpp">
 			<Option target="SmartIndentPascal" />
 		</Unit>
-		<Unit filename="SmartIndentPascal.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentPascal.h">
 			<Option target="SmartIndentPascal" />
 		</Unit>
-		<Unit filename="SmartIndentPython.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentPython.cpp">
 			<Option target="SmartIndentPython" />
 		</Unit>
-		<Unit filename="SmartIndentPython.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentPython.h">
 			<Option target="SmartIndentPython" />
 		</Unit>
-		<Unit filename="SmartIndentXML.cpp">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentXML.cpp">
 			<Option target="SmartIndentXML" />
 		</Unit>
-		<Unit filename="SmartIndentXML.h">
+		<Unit filename="../src/plugins/contrib/SmartIndent/SmartIndentXML.h">
 			<Option target="SmartIndentXML" />
 		</Unit>
-		<Unit filename="manifest_cpp.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_cpp.xml">
 			<Option target="SmartIndentCpp" />
 		</Unit>
-		<Unit filename="manifest_fortran.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_fortran.xml">
 			<Option target="SmartIndentFortran" />
 		</Unit>
-		<Unit filename="manifest_hdl.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_hdl.xml">
 			<Option target="SmartIndentHDL" />
 		</Unit>
-		<Unit filename="manifest_lua.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_lua.xml">
 			<Option target="SmartIndentLua" />
 		</Unit>
-		<Unit filename="manifest_pascal.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_pascal.xml">
 			<Option target="SmartIndentPascal" />
 		</Unit>
-		<Unit filename="manifest_python.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_python.xml">
 			<Option target="SmartIndentPython" />
 		</Unit>
-		<Unit filename="manifest_xml.xml">
+		<Unit filename="../src/plugins/contrib/SmartIndent/manifest_xml.xml">
 			<Option target="SmartIndentXML" />
 		</Unit>
 		<Extensions>

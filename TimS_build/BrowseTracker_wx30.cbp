@@ -57,31 +57,31 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="BrowseMarks.cpp" />
-		<Unit filename="BrowseMarks.h" />
-		<Unit filename="BrowseSelector.cpp" />
-		<Unit filename="BrowseSelector.h" />
-		<Unit filename="BrowseTracker.cpp" />
-		<Unit filename="BrowseTracker.h" />
-		<Unit filename="BrowseTrackerConfPanel.cpp" />
-		<Unit filename="BrowseTrackerConfPanel.h" />
-		<Unit filename="BrowseTrackerDefs.h" />
-		<Unit filename="BrowseTrackerLayout.cpp" />
-		<Unit filename="BrowseTrackerLayout.h" />
-		<Unit filename="BrowseTrackerToolbar.xrc" />
-		<Unit filename="BrowseXpms.h" />
-		<Unit filename="ConfigPanel.cpp" />
-		<Unit filename="ConfigPanel.h" />
-		<Unit filename="JumpData.cpp" />
-		<Unit filename="JumpData.h" />
-		<Unit filename="JumpTracker.cpp" />
-		<Unit filename="JumpTracker.h" />
-		<Unit filename="Makefile.am" />
-		<Unit filename="ProjectData.cpp" />
-		<Unit filename="ProjectData.h" />
-		<Unit filename="Version.cpp" />
-		<Unit filename="Version.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseMarks.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseMarks.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseSelector.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseSelector.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTracker.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTracker.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerConfPanel.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerConfPanel.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerDefs.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerLayout.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerLayout.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseTrackerToolbar.xrc" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/BrowseXpms.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/ConfigPanel.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/ConfigPanel.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/JumpData.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/JumpData.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/JumpTracker.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/JumpTracker.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/Makefile.am" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/ProjectData.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/ProjectData.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/Version.cpp" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/Version.h" />
+		<Unit filename="../src/plugins/contrib/BrowseTracker/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

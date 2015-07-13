@@ -67,25 +67,25 @@
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="AutoDoc.cpp" />
-		<Unit filename="ChangeLog.txt" />
-		<Unit filename="Config.cpp" />
-		<Unit filename="Config.h" />
-		<Unit filename="ConfigPanel.cpp" />
-		<Unit filename="ConfigPanel.h" />
-		<Unit filename="DoxyBlocks.cpp" />
-		<Unit filename="DoxyBlocks.h" />
-		<Unit filename="DoxyBlocks.rc">
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/AutoDoc.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/ChangeLog.txt" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/Config.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/Config.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/ConfigPanel.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/ConfigPanel.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/DoxyBlocks.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/DoxyBlocks.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/DoxyBlocks.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
-		<Unit filename="DoxyBlocksLogger.cpp" />
-		<Unit filename="DoxyBlocksLogger.h" />
-		<Unit filename="Expressions.h" />
-		<Unit filename="ExtractDocs.cpp" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="update30" />
-		<Unit filename="update30.bat" />
-		<Unit filename="version.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/DoxyBlocksLogger.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/DoxyBlocksLogger.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/Expressions.h" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/ExtractDocs.cpp" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/update30" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/update30.bat" />
+		<Unit filename="../src/plugins/contrib/DoxyBlocks/version.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

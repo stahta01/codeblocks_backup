@@ -56,23 +56,23 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\Cscope.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="CscopeConfig.cpp" />
-		<Unit filename="CscopeConfig.h" />
-		<Unit filename="CscopeEntryData.cpp" />
-		<Unit filename="CscopeEntryData.h" />
-		<Unit filename="CscopeParserThread.cpp" />
-		<Unit filename="CscopeParserThread.h" />
-		<Unit filename="CscopePlugin.cpp" />
-		<Unit filename="CscopePlugin.h" />
-		<Unit filename="CscopeProcess.cpp" />
-		<Unit filename="CscopeProcess.h" />
-		<Unit filename="CscopeStatusMessage.cpp" />
-		<Unit filename="CscopeStatusMessage.h" />
-		<Unit filename="CscopeTab.cpp" />
-		<Unit filename="CscopeTab.h" />
-		<Unit filename="CscopeView.cpp" />
-		<Unit filename="CscopeView.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeConfig.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeConfig.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeEntryData.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeEntryData.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeParserThread.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeParserThread.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopePlugin.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopePlugin.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeProcess.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeProcess.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeStatusMessage.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeStatusMessage.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeTab.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeTab.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeView.cpp" />
+		<Unit filename="../src/plugins/contrib/Cscope/CscopeView.h" />
+		<Unit filename="../src/plugins/contrib/Cscope/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -53,14 +53,14 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
-		<Unit filename="EditorConfig.cpp" />
-		<Unit filename="EditorConfig.h" />
-		<Unit filename="EditorConfigCommon.cpp" />
-		<Unit filename="EditorConfigCommon.h" />
-		<Unit filename="EditorConfigUI.cpp" />
-		<Unit filename="EditorConfigUI.h" />
-		<Unit filename="manifest.xml" />
-		<Unit filename="wxsmith/EditorConfigUI.wxs" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfig.cpp" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfig.h" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfigCommon.cpp" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfigCommon.h" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfigUI.cpp" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/EditorConfigUI.h" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/manifest.xml" />
+		<Unit filename="../src/plugins/contrib/EditorConfig/wxsmith/EditorConfigUI.wxs" />
 		<Extensions>
 			<code_completion />
 			<debugger />

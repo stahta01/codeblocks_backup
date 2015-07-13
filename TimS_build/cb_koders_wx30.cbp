@@ -60,11 +60,11 @@
 			<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\cb_koders.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="cb_koders.cpp" />
-		<Unit filename="cb_koders.h" />
-		<Unit filename="kodersdialog.cpp" />
-		<Unit filename="kodersdialog.h" />
-		<Unit filename="manifest.xml" />
+		<Unit filename="../src/plugins/contrib/cb_koders/cb_koders.cpp" />
+		<Unit filename="../src/plugins/contrib/cb_koders/cb_koders.h" />
+		<Unit filename="../src/plugins/contrib/cb_koders/kodersdialog.cpp" />
+		<Unit filename="../src/plugins/contrib/cb_koders/kodersdialog.h" />
+		<Unit filename="../src/plugins/contrib/cb_koders/manifest.xml" />
 		<Extensions>
 			<code_completion />
 			<wxsmith version="1">
