@@ -32,6 +32,11 @@
 				</Compiler>
 			</Target>
 			<Environment>
+				<Variable name="CB_BASE" value="$(#CB)" />
+				<Variable name="CB_BIN" value="$(#CB.bin)" />
+				<Variable name="CB_INCLUDE" value="$(#CB.include)" />
+				<Variable name="CB_LIB" value="$(#CB.lib)" />
+				<Variable name="CB_WORKDIR" value="..\src\plugins\contrib\envvars" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 				<Variable name="WX_VERSION" value="30" />
@@ -51,11 +56,11 @@
 			<Add option="-DWXUSINGDLL" />
 			<Add option="-DcbDEBUG" />
 			<Add option="-DwxUSE_UNICODE" />
-			<Add directory="../../../include" />
-			<Add directory="../../../include/scripting/include" />
-			<Add directory="../../../include/scripting/sqplus" />
-			<Add directory="../../../include/scripting/bindings" />
-			<Add directory="../../../sdk/wxscintilla/include" />
+			<Add directory="$(CB_INCLUDE)" />
+			<Add directory="$(CB_INCLUDE)/scripting/include" />
+			<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+			<Add directory="$(CB_INCLUDE)/scripting/bindings" />
+			<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 			<Add directory="$(#WX30.INCLUDE)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
 		</Compiler>
@@ -66,11 +71,11 @@
 			<Add option="-mthreads" />
 			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add library="codeblocks" />
-			<Add directory="../../../devel30" />
+			<Add directory="$(CB_BIN)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="zip -j9 ..\..\..\devel30\share\codeblocks\envvars.zip manifest.xml *.xrc" />
+			<Add after="CMD /C cd $(CB_WORKDIR) &amp; zip -j9 $(CB_BIN)\share\codeblocks\envvars.zip manifest.xml *.xrc" />
 			<Mode after="always" />
 		</ExtraCommands>
 		<Unit filename="../src/plugins/contrib/envvars/envvars.cpp" />

@@ -57,8 +57,8 @@
 					<Add option="-DWXUSINGDLL" />
 					<Add option="-DcbDEBUG" />
 					<Add option="-DwxUSE_UNICODE" />
-					<Add directory="bzip2" />
-					<Add directory="zlib" />
+					<Add directory="$(CB_WORKDIR)/bzip2" />
+					<Add directory="$(CB_WORKDIR)/zlib" />
 				</Compiler>
 				<Linker>
 					<Add option="-mthreads" />
@@ -66,15 +66,18 @@
 					<Add library="zlib/libz.a" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="zip -j9 ..\..\..\devel30\share\CodeBlocks\help_plugin.zip manifest.xml *.xrc *.png" />
-					<Add after="cmd /c if not exist ..\..\..\devel30\share\CodeBlocks\docs mkdir ..\..\..\devel30\share\CodeBlocks\docs" />
-					<Add after="xcopy /Y index.ini ..\..\..\devel30\share\CodeBlocks\docs" />
-					<Add after="cmd /c if not exist ..\..\..\output30\share\CodeBlocks\docs mkdir ..\..\..\output30\share\CodeBlocks\docs" />
-					<Add after="xcopy /Y index.ini ..\..\..\output30\share\CodeBlocks\docs" />
+					<Add after="CMD /C cd $(CB_WORKDIR) &amp; zip -j9 $(CB_BIN)\share\CodeBlocks\help_plugin.zip manifest.xml *.xrc *.png" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks\docs mkdir $(CB_BIN)\share\CodeBlocks\docs" />
+					<Add after="xcopy /Y $(CB_WORKDIR)\index.ini $(CB_BIN)\share\CodeBlocks\docs" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
 			<Environment>
+				<Variable name="CB_BASE" value="$(#CB)" />
+				<Variable name="CB_BIN" value="$(#CB.bin)" />
+				<Variable name="CB_INCLUDE" value="$(#CB.include)" />
+				<Variable name="CB_LIB" value="$(#CB.lib)" />
+				<Variable name="CB_WORKDIR" value="..\src\plugins\contrib\help_plugin" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 				<Variable name="WX_VERSION" value="30" />
@@ -86,11 +89,11 @@
 		<Compiler>
 			<Add directory="$(#WX30.include)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
-			<Add directory="../../../include" />
-			<Add directory="../../../sdk/wxscintilla/include" />
-			<Add directory="../../../include/scripting/bindings" />
-			<Add directory="../../../include/scripting/include" />
-			<Add directory="../../../include/scripting/sqplus" />
+			<Add directory="$(CB_INCLUDE)" />
+			<Add directory="$(CB_INCLUDE)/scripting/bindings" />
+			<Add directory="$(CB_INCLUDE)/scripting/include" />
+			<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+			<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="$(#WX30.include)" />
@@ -101,7 +104,7 @@
 			<Add option="-Wl,--enable-auto-import" />
 			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add library="codeblocks" />
-			<Add directory="../../../devel30" />
+			<Add directory="$(CB_BIN)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
 		<Unit filename="../src/plugins/contrib/help_plugin/HelpConfigDialog.cpp">

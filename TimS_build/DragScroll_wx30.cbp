@@ -16,6 +16,10 @@
 				<Option run_host_application_in_terminal="0" />
 			</Target>
 			<Environment>
+				<Variable name="CB_BASE" value="$(#CB)" />
+				<Variable name="CB_BIN" value="$(#CB.bin)" />
+				<Variable name="CB_INCLUDE" value="$(#CB.include)" />
+				<Variable name="CB_LIB" value="$(#CB.lib)" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 				<Variable name="WX_VERSION" value="30" />

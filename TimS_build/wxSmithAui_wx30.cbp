@@ -71,6 +71,10 @@
 				</Environment>
 			</Target>
 			<Environment>
+				<Variable name="CB_BASE" value="$(#CB)" />
+				<Variable name="CB_BIN" value="$(#CB.bin)" />
+				<Variable name="CB_INCLUDE" value="$(#CB.include)" />
+				<Variable name="CB_LIB" value="$(#CB.lib)" />
 				<Variable name="WX_CONFIG" value="wx-config --version=3.0" />
 			</Environment>
 		</Build>
