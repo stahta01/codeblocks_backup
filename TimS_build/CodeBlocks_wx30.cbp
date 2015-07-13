@@ -12,8 +12,9 @@
 				<Option object_output=".objs30" />
 				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
-					<Add directory="include/tinyxml" />
+					<Add directory="$(#CB.include)/tinyxml" />
 				</Compiler>
 			</Target>
 			<Target title="AutoRevision">
@@ -22,8 +23,9 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
-					<Add directory="include" />
+					<Add directory="$(#CB.include)" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,6 +40,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-Os" />
 				</Compiler>
@@ -48,10 +51,11 @@
 				<Option object_output=".objs30" />
 				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-fno-inline" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/squirrel" />
+					<Add directory="$(#CB.include)/scripting/include" />
+					<Add directory="$(#CB.include)/scripting/squirrel" />
 				</Compiler>
 			</Target>
 			<Target title="Squirrel std lib">
@@ -61,10 +65,11 @@
 				<Option external_deps="sdk/scripting/lib/libsquirrel30.a;" />
 				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-fno-inline" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqstdlib" />
+					<Add directory="$(#CB.include)/scripting/include" />
+					<Add directory="$(#CB.include)/scripting/sqstdlib" />
 				</Compiler>
 			</Target>
 			<Target title="SqPlus">
@@ -74,10 +79,11 @@
 				<Option external_deps="sdk/scripting/lib/libsquirrel30.a;sdk/scripting/lib/libsqstdlib30.a;" />
 				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-fno-inline" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
+					<Add directory="$(#CB.include)/scripting/include" />
+					<Add directory="$(#CB.include)/scripting/sqplus" />
 				</Compiler>
 			</Target>
 			<Target title="scintilla">
@@ -86,15 +92,19 @@
 				<Option object_output=".objs30" />
 				<Option type="2" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-D__WX__" />
 					<Add option="-DWINVER=0x0501" />
 					<Add option="-DLINK_LEXERS" />
 					<Add option="-DSCI_LEXER" />
 					<Add option="-DWXMAKINGDLL_SCI" />
-					<Add directory="sdk/wxscintilla/src/scintilla/include" />
-					<Add directory="sdk/wxscintilla/src/scintilla/src" />
-					<Add directory="sdk/wxscintilla/src/scintilla/lexlib" />
+					<Add directory="$(#WX30.include)" />
+					<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
+					<Add directory="$(#CB)/sdk/wxscintilla/include" />
+					<Add directory="$(#CB)/sdk/wxscintilla/src/scintilla/include" />
+					<Add directory="$(#CB)/sdk/wxscintilla/src/scintilla/src" />
+					<Add directory="$(#CB)/sdk/wxscintilla/src/scintilla/lexlib" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="sdk/wxscintilla/include" />
@@ -122,17 +132,17 @@
 					<Add option="-DEXPORT_LIB" />
 					<Add option="-DEXPORT_EVENTS" />
 					<Add option="-DWXMAKINGDLL_SCI" />
-					<Add directory="include" />
-					<Add directory="include/tinyxml" />
-					<Add directory="include/scripting/bindings" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
-					<Add directory="include/mozilla_chardet" />
-					<Add directory="include/mozilla_chardet/mfbt" />
-					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
-					<Add directory="include/mozilla_chardet/xpcom" />
-					<Add directory="include/mozilla_chardet/xpcom/base" />
-					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(#CB.include)" />
+					<Add directory="$(#CB.include)/tinyxml" />
+					<Add directory="$(#CB.include)/scripting/bindings" />
+					<Add directory="$(#CB.include)/scripting/include" />
+					<Add directory="$(#CB.include)/scripting/sqplus" />
+					<Add directory="$(#CB.include)/mozilla_chardet" />
+					<Add directory="$(#CB.include)/mozilla_chardet/mfbt" />
+					<Add directory="$(#CB.include)/mozilla_chardet/nsprpub/pr/include" />
+					<Add directory="$(#CB.include)/mozilla_chardet/xpcom/base" />
+					<Add directory="$(#CB.include)/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -151,7 +161,6 @@
 					<Add directory="sdk/scripting/lib" />
 				</Linker>
 				<ExtraCommands>
-					<Add before="build_tools/autorevision/autorevision30 +wx +int +t . include/autorevision.h" />
 					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
 					<Add after="zip -jq9 devel30\share\CodeBlocks\manager_resources.zip sdk\resources\*.xrc" />
 					<Add after='cmd /c &quot;cd sdk\resources &amp; zip -0 -q ..\..\devel30\share\CodeBlocks\manager_resources.zip images\*.png images\12x12\*.png images\16x16\*.png&quot;' />
@@ -169,16 +178,18 @@
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
-					<Add directory="include/mozilla_chardet" />
-					<Add directory="include/mozilla_chardet/mfbt" />
-					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
-					<Add directory="include/mozilla_chardet/xpcom" />
-					<Add directory="include/mozilla_chardet/xpcom/base" />
-					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/scripting/include" />
+					<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/mfbt" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/xpcom/base" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#WX30.include)" />
+					<Add directory="$(CB_BASE)" />
+				</ResourceCompiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-import" />
 					<Add option="-Wl,--no-undefined" />
@@ -221,10 +232,11 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
-					<Add directory="include/scripting/bindings" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/scripting/include" />
+					<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+					<Add directory="$(CB_INCLUDE)/scripting/bindings" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -256,8 +268,9 @@
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
 					<Add option="-DASTYLE_LIB" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
 					<Add directory="plugins/astyle/astyle" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -288,7 +301,8 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -333,10 +347,11 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="plugins/compilergcc/depslib/src" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_BASE)/plugins/compilergcc/depslib/src" />
+					<Add directory="$(CB_INCLUDE)/scripting/include" />
+					<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -372,9 +387,10 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/scripting/include" />
+					<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -406,13 +422,11 @@
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
 					<Add option="-DCC_NO_COLLAPSE_ITEM" />
-					<Add directory="include" />
-					<Add directory="include/mozilla_chardet" />
-					<Add directory="include/mozilla_chardet/mfbt" />
-					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
-					<Add directory="include/mozilla_chardet/xpcom" />
-					<Add directory="include/mozilla_chardet/xpcom/base" />
-					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/mfbt" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/xpcom/base" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -443,7 +457,8 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -474,7 +489,7 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -505,7 +520,8 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -536,7 +552,7 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -567,13 +583,10 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/mozilla_chardet" />
-					<Add directory="include/mozilla_chardet/mfbt" />
-					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
-					<Add directory="include/mozilla_chardet/xpcom" />
-					<Add directory="include/mozilla_chardet/xpcom/base" />
-					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/mfbt" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/xpcom/base" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -604,9 +617,10 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/scripting/include" />
-					<Add directory="include/scripting/sqplus" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/scripting/include" />
+					<Add directory="$(CB_INCLUDE)/scripting/sqplus" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -637,13 +651,11 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
-					<Add directory="include/mozilla_chardet" />
-					<Add directory="include/mozilla_chardet/mfbt" />
-					<Add directory="include/mozilla_chardet/nsprpub/pr/include" />
-					<Add directory="include/mozilla_chardet/xpcom" />
-					<Add directory="include/mozilla_chardet/xpcom/base" />
-					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="$(CB_INCLUDE)" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/mfbt" />
+					<Add directory="$(CB_INCLUDE)/mozilla_chardet/xpcom/base" />
+					<Add directory="$(CB_BASE)/sdk/wxscintilla/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -674,7 +686,7 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-DBUILDING_PLUGIN" />
-					<Add directory="include" />
+					<Add directory="$(CB_INCLUDE)" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -693,6 +705,10 @@
 				</ExtraCommands>
 			</Target>
 			<Environment>
+				<Variable name="CB_BASE" value="$(#CB)" />
+				<Variable name="CB_BIN" value="$(#CB.bin)" />
+				<Variable name="CB_INCLUDE" value="$(#CB.include)" />
+				<Variable name="CB_LIB" value="$(#CB.lib)" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 				<Variable name="WX_VERSION" value="30" />
@@ -718,8 +734,6 @@
 			<Add option="-DwxUSE_UNICODE" />
 			<Add directory="$(#WX30.include)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
-			<Add directory="sdk/wxscintilla/include" />
-			<Add directory="include/tinyxml" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="$(#WX30.include)" />
