@@ -1,6 +1,8 @@
 #include <wx/notebook.h>
 #include <wx/textctrl.h>
 #include <wx/regex.h>
+
+#include <wx/wxscintilla.h>
 #include "PipedProcessCtrl.h"
 #include <globals.h>
 #include <cbeditor.h>

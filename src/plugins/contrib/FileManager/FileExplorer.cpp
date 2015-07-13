@@ -5,7 +5,6 @@
 
 #include <sdk.h>
 #ifndef CB_PRECOMP
-    #include <wx/dnd.h>
     #include <wx/imaglist.h>
 
     #include <cbproject.h>
@@ -16,6 +15,8 @@
 #include <list>
 #include <vector>
 #include <iostream>
+
+#include <wx/dnd.h>
 
 #include "se_globals.h"
 #include "CommitBrowser.h"
