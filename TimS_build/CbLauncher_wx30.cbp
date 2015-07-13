@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="../../devel30/CbLauncher" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../.objs30/tools/CbLauncher" />
+				<Option output="$(CB_BIN)/CbLauncher" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs30/tools/CbLauncher" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Linker>
