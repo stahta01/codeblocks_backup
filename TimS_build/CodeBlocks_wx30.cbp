@@ -161,9 +161,9 @@
 					<Add directory="sdk/scripting/lib" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\manager_resources.zip sdk\resources\*.xrc" />
-					<Add after='cmd /c &quot;cd sdk\resources &amp; zip -0 -q ..\..\devel30\share\CodeBlocks\manager_resources.zip images\*.png images\12x12\*.png images\16x16\*.png&quot;' />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\manager_resources.zip $(CB_BASE)\sdk\resources\*.xrc" />
+					<Add after="zip -0 -q $(CB_BIN)\share\CodeBlocks\manager_resources.zip $(CB_BASE)\sdk\resources\images\*.png $(CB_BASE)\sdk\resources\images\12x12\*.png $(CB_BASE)\sdk\resources\images\16x16\*.png" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -212,10 +212,10 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\resources.zip src\resources\*.xrc" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\start_here.zip src\resources\start_here\*.html src\resources\start_here\*.png" />
-					<Add after='cmd /c &quot;cd src\resources &amp; zip -0 -q ..\..\devel30\share\CodeBlocks\resources.zip images\*.png images\16x16\*.png&quot;' />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\resources.zip $(CB_BASE)\src\resources\*.xrc" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\start_here.zip $(CB_BASE)\src\resources\start_here\*.html $(CB_BASE)\src\resources\start_here\*.png" />
+					<Add after="zip -0 -q $(CB_BIN)\share\CodeBlocks\resources.zip $(CB_BASE)\src\resources\images\*.png $(CB_BASE)\src\resources\images\16x16\*.png" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -249,8 +249,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\abbreviations.zip plugins\abbreviations\resources\manifest.xml plugins\abbreviations\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\abbreviations.zip $(CB_BASE)\plugins\abbreviations\resources\manifest.xml $(CB_BASE)\plugins\abbreviations\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -283,8 +283,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\astyle.zip plugins\astyle\resources\manifest.xml plugins\astyle\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\astyle.zip $(CB_BASE)\plugins\astyle\resources\manifest.xml $(CB_BASE)\plugins\astyle\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -315,8 +315,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\autosave.zip plugins\autosave\manifest.xml plugins\autosave\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\autosave.zip $(CB_BASE)\plugins\autosave\manifest.xml $(CB_BASE)\plugins\autosave\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -366,11 +366,11 @@
 					<Add directory="plugins/compilergcc/depslib" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\compiler.zip plugins\compilergcc\resources\manifest.xml plugins\compilergcc\resources\*.xrc" />
-					<Add after='cmd /c &quot;cd plugins\compilergcc\resources &amp; zip -0 -q ..\..\..\devel30\share\CodeBlocks\compiler.zip images\*.png images\16x16\*.png&quot;' />
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks\compilers mkdir devel30\share\CodeBlocks\compilers" />
-					<Add after="cmd /c xcopy /D /Y plugins\compilergcc\resources\compilers\*.* devel30\share\CodeBlocks\compilers" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\compiler.zip $(CB_BASE)\plugins\compilergcc\resources\manifest.xml $(CB_BASE)\plugins\compilergcc\resources\*.xrc" />
+					<Add after="zip -0 -q $(CB_BIN)\share\CodeBlocks\compiler.zip $(CB_BASE)\plugins\compilergcc\resources\images\*.png $(CB_BASE)\plugins\compilergcc\resources\images\16x16\*.png" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks\compilers mkdir $(CB_BIN)\share\CodeBlocks\compilers" />
+					<Add after="cmd /c xcopy /D /Y $(CB_BASE)\plugins\compilergcc\resources\compilers\*.* $(CB_BIN)\share\CodeBlocks\compilers" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -403,8 +403,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\debugger.zip plugins\debuggergdb\resources\manifest.xml plugins\debuggergdb\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\debugger.zip $(CB_BASE)\plugins\debuggergdb\resources\manifest.xml $(CB_BASE)\plugins\debuggergdb\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -439,8 +439,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\codecompletion.zip plugins\codecompletion\resources\manifest.xml plugins\codecompletion\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\codecompletion.zip $(CB_BASE)\plugins\codecompletion\resources\manifest.xml $(CB_BASE)\plugins\codecompletion\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -471,8 +471,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\classwizard.zip plugins\classwizard\resources\manifest.xml plugins\classwizard\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\classwizard.zip $(CB_BASE)\plugins\classwizard\resources\manifest.xml $(CB_BASE)\plugins\classwizard\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -502,8 +502,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\defaultmimehandler.zip plugins\defaultmimehandler\resources\manifest.xml plugins\defaultmimehandler\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\defaultmimehandler.zip $(CB_BASE)\plugins\defaultmimehandler\resources\manifest.xml $(CB_BASE)\plugins\defaultmimehandler\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -534,8 +534,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -j9 devel30\share\CodeBlocks\occurrenceshighlighting.zip plugins\occurrenceshighlighting\resources\manifest.xml plugins\occurrenceshighlighting\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -j9 $(CB_BIN)\share\CodeBlocks\occurrenceshighlighting.zip $(CB_BASE)\plugins\occurrenceshighlighting\resources\manifest.xml $(CB_BASE)\plugins\occurrenceshighlighting\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -565,8 +565,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\openfileslist.zip plugins\openfileslist\manifest.xml" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\openfileslist.zip $(CB_BASE)\plugins\openfileslist\manifest.xml" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -599,8 +599,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\projectsimporter.zip plugins\projectsimporter\resources\manifest.xml plugins\projectsimporter\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\projectsimporter.zip $(CB_BASE)\plugins\projectsimporter\resources\manifest.xml $(CB_BASE)\plugins\projectsimporter\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -633,8 +633,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\scriptedwizard.zip plugins\scriptedwizard\resources\manifest.xml" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\scriptedwizard.zip $(CB_BASE)\plugins\scriptedwizard\resources\manifest.xml" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -668,8 +668,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\todo.zip plugins\todo\resources\manifest.xml plugins\todo\resources\*.xrc" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\todo.zip $(CB_BASE)\plugins\todo\resources\manifest.xml $(CB_BASE)\plugins\todo\resources\*.xrc" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -699,8 +699,8 @@
 					<Add directory="devel30" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c if not exist devel30\share\CodeBlocks mkdir devel30\share\CodeBlocks" />
-					<Add after="zip -jq9 devel30\share\CodeBlocks\xpmanifest.zip plugins\xpmanifest\manifest.xml" />
+					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
+					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\xpmanifest.zip $(CB_BASE)\plugins\xpmanifest\manifest.xml" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
