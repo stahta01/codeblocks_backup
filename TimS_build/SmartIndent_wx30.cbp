@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="SmartIndentCpp">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentCpp" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentCpp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log -p debug" />
@@ -28,9 +28,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentHDL">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentHDL" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentHDL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-check-associations -ns -nd -p debug" />
@@ -49,9 +49,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentPascal">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentPascal" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentPascal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log -p debug" />
@@ -70,9 +70,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentPython">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentPython" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentPython" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log -p debug" />
@@ -91,9 +91,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentLua">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentLua" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentLua" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-check-associations -ns -nd -p debug" />
@@ -112,9 +112,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentFortran">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentFortran" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentFortran" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-check-associations -ns -nd -p debug" />
@@ -133,9 +133,9 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="SmartIndentXML">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SmartIndentXML" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel30" />
-				<Option object_output="../../../.objs30/plugins/contrib/SmartIndent" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SmartIndentXML" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output=".objs30/plugins/contrib/SmartIndent" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log -p debug" />

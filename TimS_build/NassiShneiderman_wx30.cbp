@@ -8,8 +8,8 @@
 		<Build>
 			<Target title="default">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel30/share/CodeBlocks/plugins/NassiShneiderman" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs30/plugins/contrib/NassiShneiderman" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/NassiShneiderman" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs30/plugins/contrib/NassiShneiderman" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --multiple-instance --no-check-associations -ns -nd -p debug" />

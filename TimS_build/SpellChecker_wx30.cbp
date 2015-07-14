@@ -8,9 +8,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="hunspell">
-				<Option output="../../../devel30/hunspell" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/hunspell" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="../../../.objs30/plugins/contrib/SpellChecker/hunspell" />
+				<Option object_output=".objs30/plugins/contrib/SpellChecker/hunspell" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
@@ -33,9 +33,9 @@
 				</Linker>
 			</Target>
 			<Target title="wxSpellChecker">
-				<Option output="../../../devel30/wxSpellChecker" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/wxSpellChecker" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="../../../.objs30/plugins/contrib/SpellChecker/wxSpellChecker" />
+				<Option object_output=".objs30/plugins/contrib/SpellChecker/wxSpellChecker" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
@@ -59,8 +59,8 @@
 				</Linker>
 			</Target>
 			<Target title="plugin">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/SpellChecker" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs30/plugins/contrib/SpellChecker" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/SpellChecker" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs30/plugins/contrib/SpellChecker" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --no-check-associations -ns -nd -p debug" />

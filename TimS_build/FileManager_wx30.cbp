@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="../../../devel30/share/CodeBlocks/plugins/FileManager" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs30/plugins/contrib/FileManager" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/FileManager" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs30/plugins/contrib/FileManager" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --multiple-instance -na -ns -nd -p debug" />
