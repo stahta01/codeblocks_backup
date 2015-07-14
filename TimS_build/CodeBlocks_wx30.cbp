@@ -119,7 +119,7 @@
 			</Target>
 			<Target title="sdk">
 				<Option output="$(CB_BIN)/codeblocks" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/base/tinyxml/libtxml30.a;$(CB_LIB)/sdk/scripting/lib/libsquirrel30.a;$(CB_LIB)/sdk/scripting/lib/libsqstdlib30.a;$(CB_LIB)/sdk/scripting/lib/libsqplus30.a;$(CB_LIB)/libwxscintilla_cb.a;" />
 				<Option type="3" />
@@ -170,7 +170,7 @@
 			</Target>
 			<Target title="src">
 				<Option output="$(CB_BIN)/codeblocks" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="0" />
@@ -222,7 +222,7 @@
 			</Target>
 			<Target title="Abbreviations">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/abbreviations" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -257,7 +257,7 @@
 			</Target>
 			<Target title="AStyle">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/astyle" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -291,7 +291,7 @@
 			</Target>
 			<Target title="Autosave">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/autosave" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -337,7 +337,7 @@
 			</Target>
 			<Target title="Compiler">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/compiler" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;$(CB_LIB)/plugins/compilergcc/depslib/libdepslib30.a;" />
 				<Option type="3" />
@@ -377,7 +377,7 @@
 			</Target>
 			<Target title="Debugger">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/debugger" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -411,7 +411,7 @@
 			</Target>
 			<Target title="Code-completion">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/codecompletion" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -447,7 +447,7 @@
 			</Target>
 			<Target title="Class wizard">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/classwizard" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -479,7 +479,7 @@
 			</Target>
 			<Target title="Default MIME handler">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/defaultmimehandler" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -510,7 +510,7 @@
 			</Target>
 			<Target title="Occurrences Highlighting">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/OccurrencesHighlighting" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -542,7 +542,7 @@
 			</Target>
 			<Target title="Open files list">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/openfileslist" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -573,7 +573,7 @@
 			</Target>
 			<Target title="Projects-workspaces importer">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/projectsimporter" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -607,7 +607,7 @@
 			</Target>
 			<Target title="Scripted wizard">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/scriptedwizard" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -641,7 +641,7 @@
 			</Target>
 			<Target title="To-do">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/todo" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
@@ -676,7 +676,7 @@
 			</Target>
 			<Target title="XP look &amp; feel">
 				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/xpmanifest" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="devel30" />
+				<Option working_dir="$(CB_BIN)" />
 				<Option object_output=".objs30" />
 				<Option external_deps="$(CB_LIB)/libcodeblocks.a;" />
 				<Option type="3" />
