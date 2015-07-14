@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_file>
 	<Workspace title="CodeBlocks Workspace wx3.0.x">
-		<Project filename="cbprofiler_wx30.cbp" />
+		<Project filename="Addr2LineUI_wx30.cbp" />
+		<Project filename="CbLauncher_wx30.cbp" />
+		<Project filename="cb_share_config_wx30.cbp" />
+		<Project filename="AutoVersioning_wx30.cbp" />
 		<Project filename="envvars_wx30.cbp" />
+		<Project filename="help-plugin_wx30.cbp" />
+		<Project filename="ToolsPlus_wx30.cbp" />
+		<Project filename="cbprofiler_wx30.cbp" />
 		<Project filename="Exporter_wx30.cbp" />
 		<Project filename="headerfixup_wx30.cbp" />
 		<Project filename="HexEditor_wx30.cbp" />
 		<Project filename="IncrementalSearch_wx30.cbp" />
 		<Project filename="keybinder_wx30.cbp" />
-		<Project filename="lib_finder_wx30.cbp" />
 		<Project filename="MouseSap_wx30.cbp" />
 		<Project filename="NassiShneiderman_wx30.cbp" />
 		<Project filename="ProjectOptionsManipulator_wx30.cbp" />
@@ -18,9 +23,6 @@
 		<Project filename="SmartIndent_wx30.cbp" />
 		<Project filename="SpellChecker_wx30.cbp" />
 		<Project filename="symtab_wx30.cbp" />
-		<Project filename="ThreadSearch_wx30.cbp" />
-		<Project filename="ToolsPlus_wx30.cbp" />
-		<Project filename="help-plugin_wx30.cbp" />
 		<Project filename="FileManager_wx30.cbp" />
 		<Project filename="EditorConfig_wx30.cbp" />
 		<Project filename="EditorTweaks_wx30.cbp" />
@@ -35,14 +37,12 @@
 		<Project filename="cb_koders_wx30.cbp" />
 		<Project filename="Cccc_wx30.cbp" />
 		<Project filename="codesnippets_wx30.cbp" />
-		<Project filename="AutoVersioning_wx30.cbp" />
 		<Project filename="BrowseTracker_wx30.cbp" />
+		<Project filename="wxSmith_wx30.cbp" />
 		<Project filename="wxSmithAui_wx30.cbp" />
 		<Project filename="wxContribItems_wx30.cbp" />
-		<Project filename="wxSmith_wx30.cbp" />
+		<Project filename="lib_finder_wx30.cbp" />
+		<Project filename="ThreadSearch_wx30.cbp" />
 		<Project filename="wxSmithContribItems_wx30.cbp" />
-		<Project filename="Addr2LineUI_wx30.cbp" />
-		<Project filename="cb_share_config_wx30.cbp" />
-		<Project filename="CbLauncher_wx30.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
