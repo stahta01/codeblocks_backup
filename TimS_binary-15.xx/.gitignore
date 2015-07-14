@@ -92,6 +92,15 @@
 /share/CodeBlocks/plugins/scriptedwizard.dll
 /share/CodeBlocks/plugins/todo.dll
 /share/CodeBlocks/plugins/xpmanifest.dll
+/share/CodeBlocks/AutoVersioning.zip
+/share/CodeBlocks/ToolsPlus.zip
+/share/CodeBlocks/docs/index.ini
+/share/CodeBlocks/envvars.zip
+/share/CodeBlocks/help_plugin.zip
+/share/CodeBlocks/plugins/AutoVersioning.dll
+/share/CodeBlocks/plugins/ToolsPlus.dll
+/share/CodeBlocks/plugins/envvars.dll
+/share/CodeBlocks/plugins/help_plugin.dll
 /codeblocks.dll
 /exchndl.dll
 /mingwm10.dll
