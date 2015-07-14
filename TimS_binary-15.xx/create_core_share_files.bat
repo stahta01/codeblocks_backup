@@ -27,7 +27,7 @@ xcopy /D /y sdk\resources\lexers\lexer_*.xml %CB_DEVEL_RESDIR%\lexers
 xcopy /D /y src\resources\images\*.png %CB_DEVEL_RESDIR%\images 
 xcopy /D /y src\resources\images\settings\*.png %CB_DEVEL_RESDIR%\images\settings 
 xcopy /D /y src\resources\images\16x16\*.png %CB_DEVEL_RESDIR%\images\16x16 
-REM xcopy /D /y plugins\codecompletion\resources\images\*.png %CB_DEVEL_RESDIR%\images\codecompletion 
+xcopy /D /y plugins\codecompletion\resources\images\*.png %CB_DEVEL_RESDIR%\images\codecompletion 
 xcopy /D /y plugins\compilergcc\resources\compilers\*.xml %CB_DEVEL_RESDIR%\compilers 
 echo Makefile.am >  excludes30.txt
 echo Makefile.in >> excludes30.txt
