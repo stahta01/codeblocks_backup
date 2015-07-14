@@ -21,7 +21,8 @@ if not exist %CB_DEVEL_RESDIR%\templates md %CB_DEVEL_RESDIR%\templates\
 if not exist %CB_DEVEL_RESDIR%\templates\wizard md %CB_DEVEL_RESDIR%\templates\wizard\
 if not exist %CB_DEVEL_RESDIR%\scripts md %CB_DEVEL_RESDIR%\scripts\
 
-    PAUSE
+REM PAUSE
+
 echo Copying files
 xcopy /D /y sdk\resources\lexers\lexer_*.xml %CB_DEVEL_RESDIR%\lexers 
 xcopy /D /y src\resources\images\*.png %CB_DEVEL_RESDIR%\images 
