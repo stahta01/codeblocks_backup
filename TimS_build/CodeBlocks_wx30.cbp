@@ -215,8 +215,11 @@
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
 					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\resources.zip $(CB_BASE)\src\resources\*.xrc" />
+					<Add after="cmd /c cd $(CB_BASE)\src\resources &amp; zip -0 -q $(CB_BIN)\share\CodeBlocks\resources.zip images\*.png images\12x12\*.png images\16x16\*.png" />
 					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\start_here.zip $(CB_BASE)\src\resources\start_here\*.html $(CB_BASE)\src\resources\start_here\*.png" />
-					<Add after='cmd /c &quot;cd $(CB_BASE)\src\resources &amp; zip -0 -q $(CB_BIN)\share\CodeBlocks\resources.zip images\*.png images\16x16\*.png&quot;' />
+					<Add after="xcopy /D /y $(CB_BASE)\src\resources\images\*.png $(CB_BIN)\share\CodeBlock\images\" />
+					<Add after="xcopy /D /y $(CB_BASE)\src\resources\images\settings\*.png $(CB_BIN)\share\CodeBlock\images\settings\" />
+					<Add after="xcopy /D /y $(CB_BASE)\src\resources\images\16x16\*.png $(CB_BIN)\share\CodeBlock\images\16x16\" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
