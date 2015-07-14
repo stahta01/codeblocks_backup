@@ -372,7 +372,7 @@
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
 					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\compiler.zip $(CB_BASE)\plugins\compilergcc\resources\manifest.xml $(CB_BASE)\plugins\compilergcc\resources\*.xrc" />
-					<Add after="zip -0 -q $(CB_BIN)\share\CodeBlocks\compiler.zip $(CB_BASE)\plugins\compilergcc\resources\images\*.png $(CB_BASE)\plugins\compilergcc\resources\images\16x16\*.png" />
+					<Add after="cmd /c cd $(CB_BASE)\plugins\compilergcc\resources &amp; zip -0 -q $(CB_BIN)\share\CodeBlocks\compiler.zip images\*.png images\16x16\*.png" />
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks\compilers mkdir $(CB_BIN)\share\CodeBlocks\compilers" />
 					<Add after="cmd /c xcopy /D /Y $(CB_BASE)\plugins\compilergcc\resources\compilers\*.* $(CB_BIN)\share\CodeBlocks\compilers" />
 					<Mode after="always" />
