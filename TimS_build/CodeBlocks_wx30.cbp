@@ -445,6 +445,7 @@
 				<ExtraCommands>
 					<Add after="cmd /c if not exist $(CB_BIN)\share\CodeBlocks mkdir $(CB_BIN)\share\CodeBlocks" />
 					<Add after="zip -jq9 $(CB_BIN)\share\CodeBlocks\codecompletion.zip $(CB_BASE)\plugins\codecompletion\resources\manifest.xml $(CB_BASE)\plugins\codecompletion\resources\*.xrc" />
+					<Add after="xcopy /D /y $(CB_BASE)\plugins\codecompletion\resources\images\*.png $(CB_BIN)\share\CodeBlocks\images\codecompletion" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
