@@ -510,7 +510,6 @@ AC_CONFIG_FILES([Makefile
 	src/plugins/contrib/wxContribItems/cb_wxflatnotebook.pc
 	src/plugins/contrib/wxContribItems/cb_wxspeedbutton.pc
 	src/plugins/contrib/wxContribItems/cb_wxKWIC.pc
-	src/plugins/contrib/wxContribItems/cb_wxtreelist.pc
 	src/plugins/contrib/wxContribItems/cb_wxled.pc
 	src/plugins/contrib/wxContribItems/wxchart/Makefile
 	src/plugins/contrib/wxContribItems/wxFlatNotebook/Makefile

@@ -56,12 +56,12 @@ if [ "x$REV" != "x$OLD_REV" -o ! -r $REV_FILE ]; then
 		if [ -x "$DCH" ]; then
 			AKT_REV=`sed -e 's/.*svn\([0-9]*\).*/\1/' -e 'q' < debian/changelog`
 			if [ $REV -gt $AKT_REV ]; then
-				dch -v 13.12svn$REV "New svn revision"
+				dch -v 13.12svn$REV-1 "New svn revision"
 			fi
 		fi
 	else
 		mv debian/changelog debian/changelog.tmp
-		sed "1 s/(13.12svn[^-)]*/(13.12svn$REV/" < debian/changelog.tmp > debian/changelog
+		sed "1 s/(13.12svn[^-)]*/(13.12svn$REV-1/" < debian/changelog.tmp > debian/changelog
 		rm debian/changelog.tmp
 	fi
 fi
