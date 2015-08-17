@@ -1,3 +1,76 @@
+2015-08-15 18:52  jenslody
+
+svn10406:  * make-dist fix for new test-scripts.
+
+2015-08-15 14:55  fuscated
+
+svn10405:  * ui: Better multi monitor support for non windows
+	  system (rework the code to use wxDisplay instead of native APIs)
+
+2015-08-15 14:55  fuscated
+
+svn10404:  * editors: Make 'Close all' and 'Close all except'
+	  context menu commands to work a bit better when there are
+	  multiple tab controls
+	  
+	  > The use case for this feature is:
+	  - open many editors
+	  - drag and drop editors in multiple tab controls - one tab ctrl
+	  on the
+	  left and one tab ctrl on the right, so you see two different
+	  editors
+	  simultaneously
+	  - right click on an tab control
+	  - select 'close all' or 'close all except'
+	  
+	  In the old version these commands will close all editors, but I
+	  find it a
+	  bit more useful if they close only the editors that are part of
+	  the tab
+	  control of the current editor.
+	  
+	  > This commit implements this behaviour. The File -> Close all
+	  files
+	  command should work as before. Only the editor notebook context
+	  menu
+	  commands should be affected by this change.
+
+2015-08-15 14:55  fuscated
+
+svn10403:  - EditorManager: Some clean-up
+
+2015-08-15 13:44  fuscated
+
+svn10402:  - build: Fix noPCH build, broken in 10389
+
+2015-08-15 13:44  fuscated
+
+svn10401:  * scripting: Expose wxArrayString::SetItem method, so
+	  people can modify the contents of a wxArrayString
+
+2015-08-15 13:44  fuscated
+
+svn10400:  * wx3: Re-implement the wxArrayString::Item and
+	  wxColour::IsOk in the squirrel bindings (fixes ticket #194)
+
+2015-08-15 13:44  fuscated
+
+svn10399:  - scripting tests: Reset global counts
+
+2015-08-15 13:44  fuscated
+
+svn10398:  - scripting: Add initial implementation of regression
+	  testing of the scripting bindings (thanks bluehazzard)
+	  
+	  > To run the tests use the Script console to load any of the test
+	  files and
+	  then go to the Plugins -> Test scripting -> Test
+
+2015-08-15 11:20  jenslody
+
+svn10397:  * fix for (out-of-tree) "make dist" with wxWidgets >=
+	  3.x
+
 2015-08-15 08:49  jenslody
 
 svn10396:  * Fix bug in debian install file, thanks Tim
