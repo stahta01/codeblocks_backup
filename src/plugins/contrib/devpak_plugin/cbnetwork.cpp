@@ -7,13 +7,20 @@
  * $HeadURL$
  */
 
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/app.h> // wxPostEvent
+    #include <wx/filename.h>
+    #include <wx/msgdlg.h>
+    #include <wx/string.h>
+    #include <wx/txtstrm.h>
+    #include <wx/wfstream.h>
+
+    #include <configmanager.h>
+#endif // CB_PRECOMP
+#include <wx/url.h>
+
 #include "cbnetwork.h"
-#include <configmanager.h>
-#include <wx/txtstrm.h>
-#include <wx/wfstream.h>
-#include <wx/app.h> // wxPostEvent
-#include <wx/msgdlg.h>
-#include <wx/filename.h>
 
 DECLARE_EVT_CBNET(cbEVT_CBNET_CONNECT);
 DECLARE_EVT_CBNET(cbEVT_CBNET_DISCONNECT);

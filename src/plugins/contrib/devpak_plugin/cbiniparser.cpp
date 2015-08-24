@@ -7,9 +7,14 @@
  * $HeadURL$
  */
 
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/file.h>
+    #include <wx/textctrl.h>
+    #include <wx/utils.h>
+#endif // CB_PRECOMP
+
 #include "cbiniparser.h"
-#include <wx/utils.h>
-#include <wx/file.h>
 
 #include <wx/arrimpl.cpp> // this is a magic incantation which must be done!
 WX_DEFINE_OBJARRAY(IniKeyValuePairArray);

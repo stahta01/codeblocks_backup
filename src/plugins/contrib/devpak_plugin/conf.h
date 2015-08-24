@@ -1,9 +1,10 @@
 #ifndef CONF_H
 #define CONF_H
 
-#include <wx/string.h>
-#include <wx/dynarray.h>
+#include <wx/arrstr.h>
 #include "cbiniparser.h"
+
+class wxString;
 
 struct UpdateRec
 {

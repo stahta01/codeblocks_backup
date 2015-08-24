@@ -7,16 +7,21 @@
  * $HeadURL$
  */
 
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/intl.h>
+    #include <wx/msgdlg.h>
+
+    #include <compiler.h>
+    #include <compilerfactory.h>
+    #include <configmanager.h>
+    #include <manager.h>
+#endif // CB_PRECOMP
+#include <wx/dirdlg.h>
+
 #include "devpakupdater.h"
 #include "updatedlg.h"
 #include "conf.h"
-#include <manager.h>
-#include <configmanager.h>
-#include <compilerfactory.h>
-#include <compiler.h>
-#include <wx/msgdlg.h>
-#include <wx/dirdlg.h>
-#include <wx/intl.h>
 
 // Register the plugin
 namespace

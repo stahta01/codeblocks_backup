@@ -1,16 +1,17 @@
 #ifndef DEVPAKINSTALLER_H
 #define DEVPAKINSTALLER_H
 
-#include <wx/string.h>
 #include <wx/progdlg.h>
-#include <wx/dynarray.h>
+#include <wx/string.h>
+
+class wxArrayString;
 
 class DevPakInstaller
 {
 	public:
 		DevPakInstaller();
 		~DevPakInstaller();
-		
+
 		bool Install(const wxString& name, const wxString& filename, const wxString& dir, wxArrayString* files = 0);
 		bool Uninstall(const wxString& entry);
 		const wxString& GetStatus() const { return m_Status; }
