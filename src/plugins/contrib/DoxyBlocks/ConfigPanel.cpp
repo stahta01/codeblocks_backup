@@ -20,21 +20,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  *****************************************************************************/
-#include "ConfigPanel.h"
-#include <sdk.h> // Code::Blocks SDK
+
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/filedlg.h>
+
+    #include <configmanager.h>
+    #include <editormanager.h>
+#endif // CB_PRECOMP
 
 //(*InternalHeaders(ConfigPanel)
 #include <wx/string.h>
 #include <wx/intl.h>
 //*)
-#include <wx/filedlg.h>
+
 #include <wx/fontutil.h>
 
-#include <configmanager.h>
+#include <cbstyledtextctrl.h>
 #include <editorcolourset.h>
-#include <editormanager.h>
 #include <tinyxml/tinyxml.h>
 
+#include "ConfigPanel.h"
 #include "version.h"
 
 
