@@ -21,15 +21,19 @@
  *
  *****************************************************************************/
 
-#include <sdk.h> // Code::Blocks SDK
+#include "sdk.h" // Code::Blocks SDK
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif //WX_PRECOMP
 #ifndef CB_PRECOMP
-  #include <cbeditor.h>
-  #include <configmanager.h>
-  #include <editormanager.h>
-  #include <editorcolourset.h>
-  #include <logmanager.h>
+    #include <cbeditor.h>
+    #include <configmanager.h>
+    #include <editormanager.h>
+    #include <editorcolourset.h>
+    #include <logmanager.h>
 #endif
 #include <wx/tokenzr.h>
+#include <cbstyledtextctrl.h>
 
 #include "DoxyBlocks.h"
 #include "Expressions.h"

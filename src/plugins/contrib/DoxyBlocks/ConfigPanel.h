@@ -34,7 +34,7 @@
 #include <wx/choice.h>
 #include <wx/radiobox.h>
 //*)
-#include <cbstyledtextctrl.h>
+
 #include <configurationpanel.h>
 
 #include "DoxyBlocks.h"

@@ -20,13 +20,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  *****************************************************************************/
+
+#include "sdk.h" // Code::Blocks SDK
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif //WX_PRECOMP
+#ifndef CB_PRECOMP
+    #include <wx/sizer.h>
+
+    #include <cbplugin.h>
+    #include <pluginmanager.h>
+#endif
+
 #include "DoxyBlocksLogger.h"
 
-#include <cbplugin.h>
-#include <pluginmanager.h>
-#include <prep.h>
-
-#include <wx/sizer.h>
 
 /*! \brief Update the window's settings.
  *

@@ -33,8 +33,14 @@
  *
  * Many thanks.
  *****************************************************************************/
-#include "sdk.h"
+
+#include "sdk.h" // Code::Blocks SDK
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif //WX_PRECOMP
 #ifndef CB_PRECOMP
+    #include <wx/utils.h>
+
     #include <cbproject.h>
     #include <macrosmanager.h>
     #include <projectfile.h>
@@ -42,7 +48,6 @@
 #endif
 #include <wx/busyinfo.h>
 #include <wx/ffile.h>
-#include <wx/utils.h>
 
 #include "DoxyBlocks.h"
 
