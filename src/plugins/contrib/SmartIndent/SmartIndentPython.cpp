@@ -1,7 +1,4 @@
-#include "SmartIndentPython.h"
-
-#include <sdk.h> // Code::Blocks SDK
-
+#include "sdk.h" // Code::Blocks SDK
 #ifndef CB_PRECOMP
     #include <cbeditor.h>
     #include <configmanager.h>
@@ -11,6 +8,8 @@
 #endif
 
 #include <cbstyledtextctrl.h>
+
+#include "SmartIndentPython.h"
 
 // Register the plugin with Code::Blocks.
 // We are using an anonymous namespace so we don't litter the global one.
