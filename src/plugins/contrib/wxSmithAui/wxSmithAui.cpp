@@ -1,4 +1,6 @@
-#include <sdk.h> // Code::Blocks SDK
+#ifndef SDK_H
+    #include <sdk.h> // Code::Blocks SDK
+#endif //
 #include <configurationpanel.h>
 #include "wxSmithAui.h"
 

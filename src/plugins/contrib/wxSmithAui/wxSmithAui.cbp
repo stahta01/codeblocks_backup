@@ -22,6 +22,7 @@
 					<Add option="-Winvalid-pch" />
 					<Add option="-fexceptions" />
 					<Add option="-fPIC" />
+					<Add option="-DCB_PRECOMP" />
 				</Compiler>
 				<Linker>
 					<Add option="`wx-config --version=2.8 --libs`" />
@@ -48,9 +49,14 @@
 					<Add option="-mthreads" />
 					<Add option="-fmessage-length=0" />
 					<Add option="-fexceptions" />
-					<Add option="-Winvalid-pch" />
+					<Add option='-include &quot;sdk.h&quot;' />
 					<Add option="-DHAVE_W32API_H" />
 					<Add option="-D__WXMSW__" />
+					<Add option="-DBUILDING_PLUGIN" />
+					<Add option="-DwxUSE_UNICODE" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-DCB_PRECOMP" />
+					<Add option="-DWX_PRECOMP" />
 					<Add directory="$(#wx.include)" />
 					<Add directory="$(#wx.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
 				</Compiler>
@@ -72,18 +78,18 @@
 					<Variable name="WX_SUFFIX" value="u" />
 				</Environment>
 			</Target>
+			<Environment>
+				<Variable name="CB_OBJ" value="..\..\..\.objs" />
+			</Environment>
 		</Build>
 		<VirtualTargets>
 			<Add alias="All" targets="Unix;Windows;" />
 		</VirtualTargets>
 		<Compiler>
 			<Add option="$(#CB_RELEASE_TYPE)" />
-			<Add option="-DBUILDING_PLUGIN" />
-			<Add option="-DwxUSE_UNICODE" />
-			<Add option="-DWXUSINGDLL" />
+			<Add option="-Winvalid-pch" />
 			<Add option="-DcbDEBUG" />
-			<Add option="-DCB_PRECOMP" />
-			<Add option="-DWX_PRECOMP" />
+			<Add directory="$(CB_OBJ)/include" />
 			<Add directory="../../../include" />
 			<Add directory="../../../sdk/wxscintilla/include" />
 			<Add directory="../../../sdk/wxpropgrid/include" />
