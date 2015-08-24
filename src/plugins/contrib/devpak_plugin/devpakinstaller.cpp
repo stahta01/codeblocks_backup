@@ -7,13 +7,20 @@
  * $HeadURL$
  */
 
-#include "devpakinstaller.h"
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/filename.h>
+    #include <wx/intl.h>
+    #include <wx/msgdlg.h>
+#endif // CB_PRECOMP
+#include <wx/progdlg.h>
+
 #include <bzlib.h>
-#include <wx/intl.h>
+
+#include "devpakinstaller.h"
 #include "mytar.h"
 #include "cbiniparser.h"
-#include <wx/filename.h>
-#include <wx/msgdlg.h>
+
 
 DevPakInstaller::DevPakInstaller()
     : m_pDlg(0)

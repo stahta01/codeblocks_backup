@@ -1,11 +1,14 @@
 #ifndef UPDATEDLG_H
 #define UPDATEDLG_H
 
-#include <wx/listctrl.h>
-#include <wx/treectrl.h>
 #include "scrollingdialog.h"
 #include "cbnetwork.h"
 #include "conf.h"
+
+class wxListEvent;
+class wxListItem;
+class wxTreeEvent;
+class wxTreeItemId;
 
 class UpdateDlg : public wxScrollingDialog
 {

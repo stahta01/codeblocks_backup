@@ -7,11 +7,17 @@
  * $HeadURL$
  */
 
-#include "conf.h"
-#include <wx/intl.h>
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/filename.h>
+    #include <wx/intl.h>
+    #include <wx/string.h>
+
+    #include <globals.h>
+#endif // CB_PRECOMP
 #include <wx/url.h>
-#include <wx/filename.h>
-#include <globals.h>
+
+#include "conf.h"
 
 wxString g_MasterPath;
 
