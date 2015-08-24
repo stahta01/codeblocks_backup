@@ -9,18 +9,22 @@
 			<Target title="Unix">
 				<Option platforms="Unix;Mac;" />
 				<Option output="../../../devel30/share/codeblocks/plugins/wxSmithAui" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs30/plugins/contrib/wxSmithAui" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmithAui" />
 				<Option external_deps="../../../devel30/libwxsmithlib.so;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --multiple-instance -ns -ni -p debug" />
 				<Option host_application="../../../devel30/codeblocks" />
 				<Option run_host_application_in_terminal="0" />
+				<Option projectIncludeDirsRelation="2" />
 				<Compiler>
 					<Add option="-ansi" />
 					<Add option="`$(WX_CONFIG) --cflags`" />
 					<Add option="-fexceptions" />
 					<Add option="-fPIC" />
+					<Add option='-include &quot;sdk.h&quot;' />
+					<Add option="-DCB_PRECOMP" />
+					<Add directory="$(CB_OBJ)/include" />
 				</Compiler>
 				<Linker>
 					<Add option="`$(WX_CONFIG) --libs std,aui,propgrid`" />
@@ -33,7 +37,7 @@
 			<Target title="Windows">
 				<Option platforms="Windows;" />
 				<Option output="../../../devel30/share/codeblocks/plugins/wxSmithAui" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs30/plugins/contrib/wxSmithAui" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmithAui" />
 				<Option external_deps="../../../devel30/wxsmithlib.dll;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -48,6 +52,10 @@
 					<Add option="-fexceptions" />
 					<Add option="-DHAVE_W32API_H" />
 					<Add option="-D__WXMSW__" />
+					<Add option="-DBUILDING_PLUGIN" />
+					<Add option="-DwxUSE_UNICODE" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-DNOPCH" />
 					<Add directory="$(#WX30.include)" />
 					<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
 				</Compiler>
@@ -71,6 +79,7 @@
 				</Environment>
 			</Target>
 			<Environment>
+				<Variable name="CB_OBJ" value="../../../.objs30" />
 				<Variable name="WX_CONFIG" value="wx-config --version=3.0" />
 			</Environment>
 		</Build>
@@ -79,11 +88,8 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add option="$(#CB_RELEASE_TYPE)" />
-			<Add option="-DBUILDING_PLUGIN" />
-			<Add option="-DwxUSE_UNICODE" />
-			<Add option="-DWXUSINGDLL" />
+			<Add option="-Winvalid-pch" />
 			<Add option="-DcbDEBUG" />
-			<Add option="-DNOPCH" />
 			<Add directory="../../../include" />
 			<Add directory="../../../sdk/wxscintilla/include" />
 			<Add directory="../wxSmith" />
