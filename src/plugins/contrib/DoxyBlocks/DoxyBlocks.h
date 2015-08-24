@@ -24,8 +24,6 @@
 #define DOXYBLOCKS_H_INCLUDED
 
 #include <cbplugin.h>
-#include <cbstyledtextctrl.h>
-#include <tinyxml/tinyxml.h>
 
 #include "Config.h"
 

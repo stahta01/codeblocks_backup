@@ -23,7 +23,9 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#include <wx/string.h>
+#include <wx/defs.h>
+
+class wxString;
 
 /*! \brief DoxyBlocks' configuration class.
  */
