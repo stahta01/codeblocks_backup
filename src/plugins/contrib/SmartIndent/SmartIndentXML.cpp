@@ -1,7 +1,4 @@
-#include "SmartIndentXML.h"
-
-#include <sdk.h> // Code::Blocks SDK
-
+#include "sdk.h" // Code::Blocks SDK
 #ifndef CB_PRECOMP
     #include <cbeditor.h>
     #include <configmanager.h>
@@ -13,6 +10,8 @@
 #include <wx/regex.h>
 
 #include <cbstyledtextctrl.h>
+
+#include "SmartIndentXML.h"
 
 // Register the plugin with Code::Blocks.
 // We are using an anonymous namespace so we don't litter the global one.
