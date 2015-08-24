@@ -3,7 +3,6 @@
 
 #include <wx/string.h>
 #include <wx/dynarray.h>
-#include <wx/textctrl.h>
 
 struct IniKeyValuePair
 {

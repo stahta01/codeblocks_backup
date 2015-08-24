@@ -7,23 +7,29 @@
  * $HeadURL$
  */
 
-#include "updatedlg.h"
-#include <wx/xrc/xmlres.h>
-#include <wx/msgdlg.h>
-#include <wx/button.h>
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/button.h>
+    #include <wx/checkbox.h>
+    #include <wx/combobox.h>
+    #include <wx/file.h>
+    #include <wx/listctrl.h>
+    #include <wx/menu.h>
+    #include <wx/msgdlg.h>
+    #include <wx/stattext.h>
+    #include <wx/textctrl.h>
+    #include <wx/xrc/xmlres.h>
+
+    #include "configmanager.h"
+    #include "globals.h"
+    #include "manager.h"
+#endif // CB_PRECOMP
 #include <wx/gauge.h>
-#include <wx/stattext.h>
-#include <wx/textctrl.h>
-#include <wx/combobox.h>
-#include <wx/checkbox.h>
-#include <wx/file.h>
-#include <wx/menu.h>
+
+#include "updatedlg.h"
 #include "devpakinstaller.h"
 #include "crc32.h"
 
-#include "manager.h"
-#include "configmanager.h"
-#include "globals.h"
 
 int idNet = wxNewId();
 int idPopupInstall = wxNewId();

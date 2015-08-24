@@ -2,10 +2,9 @@
 #define CBNETWORK_H
 
 #include <wx/event.h>
-#include <wx/string.h>
-#include <wx/stream.h>
-#include <wx/intl.h>
-#include <wx/url.h>
+
+class wxURL;
+class wxInputStream;
 
 typedef const int cbNetEvent;
 

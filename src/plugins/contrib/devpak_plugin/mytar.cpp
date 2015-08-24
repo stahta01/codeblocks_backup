@@ -7,10 +7,16 @@
  * $HeadURL$
  */
 
-#include "mytar.h"
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/intl.h>
+
+    #include <globals.h>
+#endif // CB_PRECOMP
 #include <io.h>
-#include <globals.h>
-#include <wx/intl.h>
+
+#include "mytar.h"
+
 #include <wx/arrimpl.cpp>
 WX_DEFINE_OBJARRAY(ReplacersArray);
 
