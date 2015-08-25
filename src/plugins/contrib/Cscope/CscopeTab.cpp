@@ -1,11 +1,17 @@
-#include "CscopeConfig.h"
-#include "CscopeTab.h"
-#include <manager.h>
-#include <editormanager.h>
-#include <cbeditor.h>
+#include "sdk.h" // Code::Blocks SDK
 
 #include <wx/clipbrd.h>
 #include <wx/dataobj.h>
+
+#ifndef CB_PRECOMP
+    #include <manager.h>
+    #include <editormanager.h>
+    #include <cbeditor.h>
+#endif // CB_PRECOMP
+
+#include "CscopeConfig.h"
+#include "CscopeTab.h"
+
 
 CscopeTab::CscopeTab( wxWindow* parent, CscopeConfig *cfg )
     : wxPanel( parent )
