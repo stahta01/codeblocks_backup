@@ -1,4 +1,4 @@
-#include "EditorConfigUI.h"
+#include "sdk.h" // Code::Blocks SDK
 
 //(*InternalHeaders(EditorConfigUI)
 #include <wx/spinctrl.h>
@@ -10,10 +10,13 @@
 #include <wx/choice.h>
 //*)
 
-#include <cbproject.h>
-#include <logmanager.h>
-#include <manager.h>
+#ifndef CB_PRECOMP
+    #include <cbproject.h>
+    #include <logmanager.h>
+    #include <manager.h>
+#endif // CB_PRECOMP
 
+#include "EditorConfigUI.h"
 #include "EditorConfigCommon.h"
 
 //(*IdInit(EditorConfigUI)
