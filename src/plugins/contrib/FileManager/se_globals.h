@@ -7,8 +7,8 @@
 	#include <wx/wx.h>
 #endif
 
-#include <sdk.h>
-#ifndef CB_PRECOMP
+//#include <sdk.h>
+//#ifndef CB_PRECOMP
     #include <wx/dir.h>
     #include <wx/filename.h>
     #include <wx/txtstrm.h>
@@ -17,7 +17,7 @@
     #include <editormanager.h>
     #include <logmanager.h>
     #include <manager.h>
-#endif
+//#endif
 
 wxString GetParentDir(const wxString &path);
 
