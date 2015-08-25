@@ -11,10 +11,6 @@
 // If no selected text, paste clipboard data at cursor position
 // If selected text, and user switches editors, copy selection to clipboard
 
-#if defined(__GNUG__) && !defined(__APPLE__)
-	#pragma implementation "MouseSap.h"
-#endif
-
 
 #include <sdk.h>
 #ifndef CB_PRECOMP
