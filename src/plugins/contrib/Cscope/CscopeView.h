@@ -1,9 +1,9 @@
 #ifndef CSCOPEVIEW_H
 #define CSCOPETVIEW_H
 
-#include <wx/string.h>
 #include "loggers.h"
 
+class wxString;
 
 class CscopeConfig;
 class CscopeTab;

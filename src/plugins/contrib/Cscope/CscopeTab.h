@@ -1,16 +1,7 @@
 #ifndef CSCOPE_TAB
 #define CSCOPE_TAB
 
-#include <wx/string.h>
 #include <wx/stattext.h>
-#include <wx/gdicmn.h>
-#include <wx/font.h>
-#include <wx/colour.h>
-#include <wx/settings.h>
-#include <wx/choice.h>
-#include <wx/button.h>
-#include <wx/sizer.h>
-//#include <wx/treectrl.h>
 #include <wx/listctrl.h>
 #include <wx/gauge.h>
 #include <wx/panel.h>
