@@ -1,6 +1,7 @@
 #include <sdk.h> // Code::Blocks SDK
 #ifndef CB_PRECOMP
     #include <wx/process.h>
+    #include <wx/menu.h>
 
     #include "cbeditor.h"
     #include "cbproject.h"
