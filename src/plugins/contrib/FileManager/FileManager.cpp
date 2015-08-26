@@ -4,6 +4,8 @@
 #endif // WX_PRECOMP
 #include <wx/aui/aui.h>
 #ifndef CB_PRECOMP
+    #include <wx/menu.h>
+
     #include <cbauibook.h>
     #include <cbproject.h>
     #include <projectmanager.h>

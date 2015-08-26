@@ -1,4 +1,8 @@
 #include "sdk.h" // Code::Blocks SDK
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+    #include <wx/dirdlg.h>
+#endif // WX_PRECOMP
 #ifndef CB_PRECOMP
   #include <wx/xrc/xmlres.h>
   #include <wx/checkbox.h>

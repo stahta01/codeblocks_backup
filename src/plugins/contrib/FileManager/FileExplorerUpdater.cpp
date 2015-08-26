@@ -1,5 +1,6 @@
 #include "sdk.h" // Code::Blocks SDK
 
+#include <wx/dir.h>
 #include <wx/sstream.h>
 #include <wx/regex.h>
 #include <set>

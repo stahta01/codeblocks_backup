@@ -5,6 +5,7 @@
 
 #ifndef WX_PRECOMP
     #include <wx/defs.h>
+    #include <wx/dirdlg.h>
 #endif // WX_PRECOMP
 
 #include <wx/aui/aui.h>
@@ -14,9 +15,13 @@
     #include <wx/dir.h>
     #include <wx/filename.h>
     #include <wx/imaglist.h>
+    #include <wx/menu.h>
+    #include <wx/textdlg.h>
 
     #include <cbproject.h>
     #include <configmanager.h>
+    #include <editorbase.h>
+    #include <editormanager.h>
     #include <projectmanager.h>
 #endif
 
