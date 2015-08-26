@@ -1,9 +1,11 @@
-#include "CommitBrowser.h"
-#include "FileExplorerUpdater.h"
+#include "sdk.h" // Code::Blocks SDK
 
 //(*InternalHeaders(CommitBrowser)
 #include <wx/xrc/xmlres.h>
 //*)
+
+#include "CommitBrowser.h"
+#include "FileExplorerUpdater.h"
 
 //(*IdInit(CommitBrowser)
 //*)

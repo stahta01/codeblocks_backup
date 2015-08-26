@@ -1,10 +1,12 @@
 #ifndef FILEEXPLORER_H
 #define FILEEXPLORER_H
 
-#include <wx/wx.h>
-#include <wx/treectrl.h>
+#include <wx/checkbox.h>
 #include <wx/combobox.h>
 #include <wx/dynarray.h>
+#include <wx/sizer.h>
+#include <wx/stattext.h>
+#include <wx/treectrl.h>
 
 #include <vector>
 #include "FileExplorerSettings.h"

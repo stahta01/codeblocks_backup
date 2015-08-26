@@ -1,5 +1,8 @@
+#include "sdk.h" // Code::Blocks SDK
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif // WX_PRECOMP
 #include <wx/aui/aui.h>
-#include <sdk.h> // Code::Blocks SDK
 #ifndef CB_PRECOMP
     #include <cbauibook.h>
     #include <cbproject.h>

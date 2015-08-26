@@ -1,11 +1,18 @@
-#include "FileExplorer.h"
-#include <wx/dir.h>
-#include <wx/filename.h>
-#include <wx/aui/aui.h>
+#include "sdk.h" // Code::Blocks SDK
+#include <list>
+#include <vector>
+#include <iostream>
 
-#include <sdk.h>
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif // WX_PRECOMP
+
+#include <wx/aui/aui.h>
+#include <wx/dnd.h>
+
 #ifndef CB_PRECOMP
-    #include <wx/dnd.h>
+    #include <wx/dir.h>
+    #include <wx/filename.h>
     #include <wx/imaglist.h>
 
     #include <cbproject.h>
@@ -13,10 +20,7 @@
     #include <projectmanager.h>
 #endif
 
-#include <list>
-#include <vector>
-#include <iostream>
-
+#include "FileExplorer.h"
 #include "se_globals.h"
 #include "CommitBrowser.h"
 

@@ -1,8 +1,11 @@
-#include "directorymonitor.h"
-#include <vector>
-#include "se_globals.h"
+#include "sdk.h" // Code::Blocks SDK
 
 #include <iostream>
+#include <vector>
+
+#include "directorymonitor.h"
+#include "se_globals.h"
+
 
 DEFINE_EVENT_TYPE(wxEVT_MONITOR_NOTIFY)
 DEFINE_EVENT_TYPE(wxEVT_MONITOR_NOTIFY2)
