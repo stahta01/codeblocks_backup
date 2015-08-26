@@ -1,3 +1,9 @@
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <editorbase.h>
+    #include <editormanager.h>
+#endif // CB_PRECOMP
+
 #include "se_globals.h"
 
 wxString GetParentDir(const wxString &path)

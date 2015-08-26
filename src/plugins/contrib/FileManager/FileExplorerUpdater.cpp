@@ -1,4 +1,4 @@
-#include <sdk.h>
+#include "sdk.h" // Code::Blocks SDK
 
 #include <wx/sstream.h>
 #include <wx/regex.h>
