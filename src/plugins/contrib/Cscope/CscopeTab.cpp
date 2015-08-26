@@ -4,6 +4,8 @@
 #include <wx/dataobj.h>
 
 #ifndef CB_PRECOMP
+    #include <wx/sizer.h>
+
     #include <manager.h>
     #include <editormanager.h>
     #include <cbeditor.h>
