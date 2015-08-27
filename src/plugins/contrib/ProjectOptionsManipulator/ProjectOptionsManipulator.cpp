@@ -7,15 +7,16 @@
  * $HeadURL$
  */
 
-#include "ProjectOptionsManipulator.h"
-
-#include <cbproject.h>
-#include <globals.h> // cbMessageBox
-#include <manager.h>
-#include <projectmanager.h>
-
+#include "sdk.h" // Code::Blocks SDK
 #include <vector>
+#ifndef CB_PRECOMP
+    #include <cbproject.h>
+    #include <globals.h> // cbMessageBox
+    #include <manager.h>
+    #include <projectmanager.h>
+#endif // CB_PRECOMP
 
+#include "ProjectOptionsManipulator.h"
 #include "ProjectOptionsManipulatorDlg.h"
 #include "ProjectOptionsManipulatorResultDlg.h"
 
