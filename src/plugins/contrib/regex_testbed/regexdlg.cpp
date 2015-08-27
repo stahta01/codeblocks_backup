@@ -9,7 +9,6 @@
 
 #include <sdk.h>
 
-#include "regexdlg.h"
 #include <wx/regex.h>
 
 #ifndef CB_PRECOMP
@@ -21,6 +20,8 @@
 //(*InternalHeaders(RegExDlg)
 #include <wx/xrc/xmlres.h>
 //*)
+
+#include "regexdlg.h"
 
 //(*IdInit(RegExDlg)
 //*)
