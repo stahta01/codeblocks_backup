@@ -7,7 +7,7 @@
  * $HeadURL$
  */
 
-#include "ProjectOptionsManipulatorResultDlg.h"
+#include "sdk.h" // Code::Blocks SDK
 
 //(*InternalHeaders(ProjectOptionsManipulatorResultDlg)
 #include <wx/sizer.h>
@@ -17,6 +17,8 @@
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
 //*)
+
+#include "ProjectOptionsManipulatorResultDlg.h"
 
 //(*IdInit(ProjectOptionsManipulatorResultDlg)
 const long ProjectOptionsManipulatorResultDlg::ID_TXT_RESULT = wxNewId();

@@ -7,7 +7,7 @@
  * $HeadURL$
  */
 
-#include "ProjectOptionsManipulatorDlg.h"
+#include "sdk.h" // Code::Blocks SDK
 
 //(*InternalHeaders(ProjectOptionsManipulatorDlg)
 #include <wx/checkbox.h>
@@ -20,6 +20,8 @@
 #include <wx/choice.h>
 #include <wx/radiobox.h>
 //*)
+
+#include "ProjectOptionsManipulatorDlg.h"
 
 //(*IdInit(ProjectOptionsManipulatorDlg)
 const long ProjectOptionsManipulatorDlg::ID_CHO_SCAN = wxNewId();
