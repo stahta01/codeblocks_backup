@@ -1,3 +1,5 @@
+#include "sdk.h" // Code::Blocks SDK
+
 #include "avVersionEditorDlg.h"
 
 //(*InternalHeaders(avVersionEditorDlg)
