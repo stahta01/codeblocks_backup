@@ -5,14 +5,14 @@
  * Copyright: (c) BYO
  * License:   GPL
  **************************************************************/
+
+#include "sdk.h" // Code::Blocks SDK
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#include "sdk.h"
 #ifndef CB_PRECOMP
-#include <wx/intl.h>
-#include <wx/string.h>
+    #include <wx/intl.h>
+    #include <wx/string.h>
 #endif
 #include "byogames.h"
 #include "byogame.h"
