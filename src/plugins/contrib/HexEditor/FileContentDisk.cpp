@@ -20,18 +20,24 @@
 * $HeadURL$
 */
 
-#include "FileContentDisk.h"
-#include "TestCasesHelper.h"
-#include "globals.h"
-
-#include <wx/utils.h>
-#include <wx/progdlg.h>
-
+#include "sdk.h" // Code::Blocks SDK
 #include <algorithm>
 #include <memory>
+#ifndef WX_PRECOMP
+    #include <wx/defs.h>
+#endif // WX_PRECOMP
+#include <wx/progdlg.h>
+#ifndef CB_PRECOMP
+    #include <wx/utils.h>
 
-#include <logmanager.h>
+    #include "globals.h"
+    #include <logmanager.h>
+#endif // CB_PRECOMP
+
 #include <annoyingdialog.h>
+
+#include "FileContentDisk.h"
+#include "TestCasesHelper.h"
 
 #define my_assertimpl( expr, exprStr, file, line ) \
     do \

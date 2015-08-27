@@ -20,9 +20,9 @@
 * $HeadURL$
 */
 
-#include "DigitView.h"
-
 #include <logmanager.h>
+
+#include "DigitView.h"
 
 #define DEFAULT_DIGIT_BITS      4
 #define DEFAULT_BLOCK_BYTES     1

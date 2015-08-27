@@ -20,11 +20,11 @@
 * $HeadURL$
 */
 
+#include <wx/file.h>
+
 #include "FileContentBase.h"
 #include "FileContentBuffered.h"
 #include "FileContentDisk.h"
-
-#include <wx/file.h>
 
 namespace
 {

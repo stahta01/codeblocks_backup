@@ -20,6 +20,17 @@
 * $HeadURL$
 */
 
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <globals.h>
+#endif // CB_PRECOMP
+
+//(*InternalHeaders(ExpressionTester)
+#include <wx/string.h>
+#include <wx/intl.h>
+//*)
+
+
 #include "ExpressionTester.h"
 
 #include "ExpressionParser.h"
@@ -28,13 +39,6 @@
 #include "SelectStoredExpressionDlg.h"
 #include "TestCasesDlg.h"
 
-
-#include <globals.h>
-
-//(*InternalHeaders(ExpressionTester)
-#include <wx/string.h>
-#include <wx/intl.h>
-//*)
 
 //(*IdInit(ExpressionTester)
 const long ExpressionTester::ID_STATICTEXT1 = wxNewId();

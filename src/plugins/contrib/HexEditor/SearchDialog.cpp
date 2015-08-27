@@ -20,20 +20,26 @@
 * $HeadURL$
 */
 
-#include "SearchDialog.h"
-#include "ExpressionParser.h"
-#include "ExpressionExecutor.h"
+#include "sdk.h" // Code::Blocks SDK
+#include <vector>
+#ifndef CB_PRECOMP
+    #include <configmanager.h>
+    #include <globals.h>
+    #include <manager.h>
+#endif // CB_PRECOMP
 
 //(*InternalHeaders(SearchDialog)
 #include <wx/string.h>
 #include <wx/intl.h>
 //*)
 
-#include <globals.h>
-#include <vector>
 #include <wx/progdlg.h>
-#include <manager.h>
-#include <configmanager.h>
+
+
+#include "SearchDialog.h"
+#include "ExpressionParser.h"
+#include "ExpressionExecutor.h"
+
 
 #define CONF_NAME  _T("editor")
 #define CONF_GROUP _T("/find_options")

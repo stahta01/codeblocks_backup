@@ -23,9 +23,10 @@
 #ifndef FILECONTENTBUFFERED_H
 #define FILECONTENTBUFFERED_H
 
-#include "FileContentBase.h"
 #include <vector>
 #include <list>
+
+#include "FileContentBase.h"
 
 /** \brief Class responsible for managing content of the file */
 class FileContentBuffered: public FileContentBase

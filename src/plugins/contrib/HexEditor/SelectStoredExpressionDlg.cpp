@@ -20,14 +20,19 @@
 * $HeadURL$
 */
 
-#include "SelectStoredExpressionDlg.h"
-#include <configmanager.h>
-#include <wx/textdlg.h>
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/textdlg.h>
+
+    #include <configmanager.h>
+#endif // CB_PRECOMP
 
 //(*InternalHeaders(SelectStoredExpressionDlg)
 #include <wx/string.h>
 #include <wx/intl.h>
 //*)
+
+#include "SelectStoredExpressionDlg.h"
 
 //(*IdInit(SelectStoredExpressionDlg)
 const long SelectStoredExpressionDlg::ID_LISTBOX1 = wxNewId();

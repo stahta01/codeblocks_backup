@@ -20,12 +20,14 @@
 * $HeadURL$
 */
 
-#include "TestCasesDlg.h"
+#include "sdk.h" // Code::Blocks SDK
 
 //(*InternalHeaders(TestCasesDlg)
 #include <wx/string.h>
 #include <wx/intl.h>
 //*)
+
+#include "TestCasesDlg.h"
 
 //(*IdInit(TestCasesDlg)
 const long TestCasesDlg::ID_LISTBOX1 = wxNewId();

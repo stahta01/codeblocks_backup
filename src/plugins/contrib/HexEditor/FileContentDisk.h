@@ -23,11 +23,12 @@
 #ifndef FILECONTENTDISK_H
 #define FILECONTENTDISK_H
 
+#include <vector>
+#include <wx/file.h>
+
 #include "FileContentBase.h"
 #include "TestCasesBase.h"
 
-#include <vector>
-#include <wx/file.h>
 
 /** \brief Class responsible for providing file content by reading from disk
  *         as much as possible.
