@@ -23,13 +23,13 @@
 #ifndef EXPRESSIONPARSER_H
 #define EXPRESSIONPARSER_H
 
-#include "FileContentBase.h"
-#include "ExpressionPreprocessed.h"
+#include <map>
 
 #include <wx/string.h>
 #include <wx/arrstr.h>
 
-#include <map>
+#include "FileContentBase.h"
+#include "ExpressionPreprocessed.h"
 
 namespace Expression
 {

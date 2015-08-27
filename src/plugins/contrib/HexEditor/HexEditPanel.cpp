@@ -20,6 +20,32 @@
 * $HeadURL$
 */
 
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/choicdlg.h>
+    #include <wx/dcclient.h>
+    #include <wx/filedlg.h>
+    #include <wx/filename.h>
+    #include <wx/sizer.h>
+    #include <wx/textdlg.h>
+
+    #include <configmanager.h>
+    #include <editormanager.h>
+    #include <logmanager.h>
+    #include <manager.h>
+    // #include "prep.h"
+#endif // CB_PRECOMP
+
+
+//(*InternalHeaders(HexEditPanel)
+#include <wx/string.h>
+#include <wx/intl.h>
+//*)
+
+#include <wx/dcbuffer.h>
+#include <wx/numdlg.h>
+
+
 #include "HexEditPanel.h"
 #include "ExpressionTester.h"
 #include "SelectStoredExpressionDlg.h"
@@ -34,25 +60,6 @@
 #include "TestCasesDlg.h"
 #include "SearchDialog.h"
 
-//(*InternalHeaders(HexEditPanel)
-#include <wx/string.h>
-#include <wx/intl.h>
-//*)
-
-#include <wx/dcbuffer.h>
-#include <wx/dcclient.h>
-#include <wx/filedlg.h>
-#include <wx/filename.h>
-#include <wx/numdlg.h>
-#include <wx/sizer.h>
-#include <wx/textdlg.h>
-#include <wx/choicdlg.h>
-
-#include <manager.h>
-#include <editormanager.h>
-#include <configmanager.h>
-#include <logmanager.h>
-#include "prep.h"
 
 namespace
 {

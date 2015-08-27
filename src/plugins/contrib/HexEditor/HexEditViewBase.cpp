@@ -20,6 +20,8 @@
 * $HeadURL$
 */
 
+#include "sdk.h" // Code::Blocks SDK\
+
 #include "HexEditViewBase.h"
 #include "HexEditPanel.h"
 

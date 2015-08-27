@@ -20,9 +20,9 @@
 * $HeadURL$
 */
 
-#include "HexEditLineBuffer.h"
-
 #include <logmanager.h>
+
+#include "HexEditLineBuffer.h"
 
 HexEditLineBuffer::HexEditLineBuffer( unsigned length )
 {

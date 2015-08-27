@@ -20,10 +20,11 @@
 * $HeadURL$
 */
 
-#include "FileContentBuffered.h"
-
 #include <wx/file.h>
 #include <algorithm>
+
+#include "FileContentBuffered.h"
+
 
 /** \brief Internal modification class */
 class FileContentBuffered::IntModificationData: public FileContentBuffered::ModificationData

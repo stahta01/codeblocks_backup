@@ -20,13 +20,13 @@
 * $HeadURL$
 */
 
+#include <wx/intl.h>
+#include <sstream>
+
 #include "ExpressionTestCases.h"
 #include "ExpressionParser.h"
 #include "ExpressionExecutor.h"
 #include "TestCasesHelper.h"
-
-#include <wx/intl.h>
-#include <sstream>
 
 namespace Expression
 {

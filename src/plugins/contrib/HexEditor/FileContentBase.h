@@ -23,7 +23,8 @@
 #ifndef FILECONTENTBASE_H
 #define FILECONTENTBASE_H
 
-#include <wx/string.h>
+// #include <wx/string.h>
+class wxString;
 
 class HexEditViewBase;
 

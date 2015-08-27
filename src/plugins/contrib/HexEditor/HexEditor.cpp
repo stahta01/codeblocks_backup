@@ -20,16 +20,20 @@
 * $HeadURL$
 */
 
-#include <sdk.h>
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/filedlg.h>
+    #include <wx/menu.h>
+
+    #include <manager.h>
+    #include <logmanager.h>
+    #include <projectmanager.h>
+    #include <configmanager.h>
+    #include <editormanager.h>
+    #include <cbproject.h>
+#endif // CB_PRECOMP
 #include <configurationpanel.h>
-#include <manager.h>
-#include <logmanager.h>
-#include <projectmanager.h>
-#include <configmanager.h>
-#include <editormanager.h>
-#include <cbproject.h>
-#include <wx/menu.h>
-#include <wx/filedlg.h>
+
 #include "HexEditor.h"
 #include "HexEditPanel.h"
 

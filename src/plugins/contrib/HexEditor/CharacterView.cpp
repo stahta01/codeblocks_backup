@@ -20,9 +20,9 @@
 * $HeadURL$
 */
 
-#include "CharacterView.h"
-
 #include <algorithm>
+
+#include "CharacterView.h"
 
 CharacterView::CharacterView( HexEditPanel* panel ): HexEditViewBase( panel )
 {

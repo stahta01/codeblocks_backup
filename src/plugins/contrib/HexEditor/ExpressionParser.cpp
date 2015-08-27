@@ -20,9 +20,9 @@
 * $HeadURL$
 */
 
-#include "ExpressionParser.h"
-
 #include <wx/intl.h>
+
+#include "ExpressionParser.h"
 
 namespace Expression
 {

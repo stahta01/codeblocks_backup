@@ -20,10 +20,11 @@
 * $HeadURL$
 */
 
-#include "ExpressionExecutor.h"
-
 #include <wx/intl.h>
 #include <cmath>
+
+#include "ExpressionExecutor.h"
+
 
 namespace Expression
 {
