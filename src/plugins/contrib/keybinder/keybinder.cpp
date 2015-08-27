@@ -13,6 +13,7 @@
 #include "sdk.h"
 #ifndef CB_PRECOMP
     #include <wx/log.h>
+    #include <wx/menu.h>
     #include <wx/sizer.h>
     #include <wx/textdlg.h>
 
@@ -29,7 +30,6 @@
 #include <wx/event.h>
 #include <wx/frame.h> // Manager::Get()->GetAppWindow()
 #include <wx/intl.h>
-#include <wx/menu.h>
 #include <wx/menuitem.h>
 #include <wx/string.h>
 #include "wx/statline.h"
