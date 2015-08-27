@@ -7,13 +7,17 @@
  * $HeadURL$
  */
 
-#include <wx/string.h>
-#include "kodersdialog.h"
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include <wx/string.h>
+#endif // CB_PRECOMP
 
 //(*InternalHeaders(KodersDialog)
 #include <wx/intl.h>
 #include <wx/string.h>
 //*)
+
+#include "kodersdialog.h"
 
 //(*IdInit(KodersDialog)
 const long KodersDialog::ID_LBL_INTRO = wxNewId();
