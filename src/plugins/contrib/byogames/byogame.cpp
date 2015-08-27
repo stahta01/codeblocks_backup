@@ -1,10 +1,12 @@
-#include <sdk.h> // PCH support
+#include "sdk.h" // Code::Blocks SDK
 #ifndef CB_PRECOMP
-#include <wx/sizer.h>
+    #include <wx/sizer.h>
+
+    #include <manager.h>
+    #include <editormanager.h>
 #endif
 #include <annoyingdialog.h>
-#include <manager.h>
-#include <editormanager.h>
+
 #include "byogame.h"
 
 byoGameLauncher::GamesT& byoGameLauncher::GetGames()

@@ -1,4 +1,4 @@
-#include "sdk.h"
+#include "sdk.h" // Code::Blocks SDK
 #ifndef CB_PRECOMP
 #include <wx/event.h>
 #include <wx/image.h>
