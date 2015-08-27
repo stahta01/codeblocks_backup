@@ -1,4 +1,4 @@
-#include "ConfigPanel.h"
+#include "sdk.h" // Code::Blocks SDK
 
 #include <wx/filedlg.h>
 
@@ -13,6 +13,8 @@
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
 //*)
+
+#include "ConfigPanel.h"
 
 //(*IdInit(ConfigPanel)
 const long ConfigPanel::ID_TXT_CPP_CHECK_APP = wxNewId();
