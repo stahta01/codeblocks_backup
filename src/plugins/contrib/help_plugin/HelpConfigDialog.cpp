@@ -7,24 +7,26 @@
  * $HeadURL$
  */
 
-#include "HelpConfigDialog.h"
-#include <wx/xrc/xmlres.h>
-#include <globals.h> // cbMessageBox
-#include <manager.h>
-#include <editormanager.h>
-#include <logmanager.h>
-#include <projectmanager.h>
-
-#include <wx/filedlg.h>
-#include <wx/textdlg.h>
-#include <wx/msgdlg.h>
-#include <wx/listbox.h>
-#include <wx/textctrl.h>
-#include <wx/checkbox.h>
-#include <wx/button.h>
-
+#include "sdk.h" // Code::Blocks SDK
 #include <algorithm>
+#ifndef CB_PRECOMP
+    #include <wx/button.h>
+    #include <wx/checkbox.h>
+    #include <wx/filedlg.h>
+    #include <wx/listbox.h>
+    #include <wx/msgdlg.h>
+    #include <wx/textctrl.h>
+    #include <wx/textdlg.h>
+    #include <wx/xrc/xmlres.h>
 
+    #include <globals.h> // cbMessageBox
+    #include <manager.h>
+    #include <editormanager.h>
+    #include <logmanager.h>
+    #include <projectmanager.h>
+#endif // CB_PRECOMP
+
+#include "HelpConfigDialog.h"
 #include "help_plugin.h"
 
 using std::find;
