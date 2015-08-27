@@ -8,13 +8,13 @@
  */
 
 #include <sdk.h> // Code::Blocks SDK
-#include <configurationpanel.h>
-#include "RegExTestbed.h"
-#include "regexdlg.h"
-
 #ifndef CB_PRECOMP
     #include <globals.h>
 #endif
+#include <configurationpanel.h>
+
+#include "RegExTestbed.h"
+#include "regexdlg.h"
 
 // Register the plugin with Code::Blocks.
 // We are using an anonymous namespace so we don't litter the global one.
