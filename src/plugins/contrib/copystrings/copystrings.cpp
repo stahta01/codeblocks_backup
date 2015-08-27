@@ -21,9 +21,10 @@
 
 #include <wx/clipbrd.h>
 #include <wx/dataobj.h>
-#include "copystrings.h"
 #include <map>
 #include <iterator>
+
+#include "copystrings.h"
 
 using namespace std;
 
