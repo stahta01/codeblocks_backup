@@ -1,11 +1,15 @@
-#include "ReopenEditorConfDLg.h"
-#include "ReopenEditor.h"
-#include "configmanager.h"
+#include "sdk.h" // Code::Blocks SDK
+#ifndef CB_PRECOMP
+    #include "configmanager.h"
+#endif // CB_PRECOMP
 
 //(*InternalHeaders(ReopenEditorConfDLg)
 #include <wx/xrc/xmlres.h>
 #include <wx/radiobox.h>
 //*)
+
+#include "ReopenEditorConfDLg.h"
+#include "ReopenEditor.h"
 
 //(*IdInit(ReopenEditorConfDLg)
 //*)
