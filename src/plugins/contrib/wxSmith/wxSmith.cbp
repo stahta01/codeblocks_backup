@@ -9,27 +9,30 @@
 		<Build>
 			<Target title="wxSmithLib">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxsmithlib" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../../../devel" />
-				<Option object_output="../../../.objs/plugins/contrib/wxSmithLib" />
+				<Option output="$(CB_BIN)/wxsmithlib" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmithLib" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
 			</Target>
 			<Target title="wxSmith">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/share/CodeBlocks/plugins/wxsmith" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxSmith" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/wxsmith" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmith" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --multiple-instance -na -ns -nd -p debug" />
-				<Option host_application="../../../devel/codeblocks.exe" />
+				<Option host_application="$(CB_BIN)/codeblocks.exe" />
 				<Option run_host_application_in_terminal="0" />
 				<Linker>
 					<Add library="wxsmithlib" />
 				</Linker>
 			</Target>
 			<Environment>
+				<Variable name="CB_BIN" value="..\..\..\devel" />
+				<Variable name="CB_LIB" value="..\..\..\lib" />
+				<Variable name="CB_OBJ" value="..\..\..\.objs" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 			</Environment>
@@ -84,8 +87,7 @@
 			<Add library="codeblocks" />
 			<Add directory="$(#WX.lib)/gcc_dll$(WX_CFG)" />
 			<Add directory="$(#WX.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
-			<Add directory="../../../devel" />
-			<Add directory="../../../base/tinyxml" />
+			<Add directory="$(CB_BIN)" />
 		</Linker>
 		<ExtraCommands>
 			<Add after="update.bat" />

@@ -9,8 +9,8 @@
 		<Build>
 			<Target title="wxFlatNoteBook">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxflatnotebook" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxFlatNotebook" />
+				<Option output="$(CB_BIN)/wxflatnotebook" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxFlatNotebook" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -21,8 +21,8 @@
 			</Target>
 			<Target title="wxChartCtrl">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxchartctrl" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxChartCtrl" />
+				<Option output="$(CB_BIN)/wxchartctrl" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxChartCtrl" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -33,8 +33,8 @@
 			</Target>
 			<Target title="wxCustomButton">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxcustombutton" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxthings" />
+				<Option output="$(CB_BIN)/wxcustombutton" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxthings" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -45,8 +45,8 @@
 			</Target>
 			<Target title="wxImagePanel">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wximagepanel" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxImagePanel" />
+				<Option output="$(CB_BIN)/wximagepanel" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxImagePanel" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -59,8 +59,8 @@
 			</Target>
 			<Target title="wxSpeedButton">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxspeedbutton" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxSpeedButton" />
+				<Option output="$(CB_BIN)/wxspeedbutton" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxSpeedButton" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -70,8 +70,8 @@
 			</Target>
 			<Target title="wxKWIC">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxkwic" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/KWIC" />
+				<Option output="$(CB_BIN)/wxkwic" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/KWIC" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -84,8 +84,8 @@
 			</Target>
 			<Target title="wxTreeList">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxtreelist" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxtreelist" />
+				<Option output="$(CB_BIN)/wxtreelist" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxtreelist" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -95,8 +95,8 @@
 			</Target>
 			<Target title="wxLED">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/wxled" prefix_auto="1" extension_auto="1" />
-				<Option object_output="../../../.objs/plugins/contrib/wxContribItems/wxled" />
+				<Option output="$(CB_BIN)/wxled" imp_lib="$(CB_LIB)/$(TARGET_OUTPUT_BASENAME)" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxContribItems/wxled" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
@@ -111,6 +111,9 @@
 				</Linker>
 			</Target>
 			<Environment>
+				<Variable name="CB_BIN" value="..\..\..\devel" />
+				<Variable name="CB_LIB" value="..\..\..\lib" />
+				<Variable name="CB_OBJ" value="..\..\..\.objs" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 			</Environment>
@@ -131,14 +134,11 @@
 			<Add option="-DwxUSE_UNICODE" />
 			<Add directory="$(#wx.include)" />
 			<Add directory="$(#wx.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
-			<Add directory="wxFlatNotebook/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-Wl,--enable-auto-import" />
 			<Add option="-mthreads" />
-			<Add library="wxpropgrid" />
 			<Add library="wxmsw28$(WX_SUFFIX)" />
-			<Add directory="../../../devel" />
 			<Add directory="$(#wx.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
 		<Unit filename="KWIC/include/wx/KWIC/AngularMeter.h">

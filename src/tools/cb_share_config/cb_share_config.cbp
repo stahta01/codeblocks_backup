@@ -7,13 +7,16 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="../../devel/cb_share_config" prefix_auto="0" extension_auto="1" />
-				<Option working_dir="../../../devel" />
-				<Option object_output="../../.objs/tools/cb_share_config" />
+				<Option output="$(CB_BIN)/cb_share_config" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output="$(CB_OBJ)/tools/cb_share_config" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 			</Target>
 			<Environment>
+				<Variable name="CB_BIN" value="..\..\devel" />
+				<Variable name="CB_LIB" value="..\..\lib" />
+				<Variable name="CB_OBJ" value="..\..\.objs" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 			</Environment>
@@ -46,7 +49,7 @@
 			<Add library="txml" />
 			<Add library="wxmsw28$(WX_SUFFIX)" />
 			<Add directory="$(#WX.lib)/gcc_dll$(WX_CFG)" />
-			<Add directory="../../base/tinyxml" />
+			<Add directory="$(CB_LIB)" />
 		</Linker>
 		<Unit filename="app.cpp" />
 		<Unit filename="app.h" />

@@ -7,18 +7,18 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="MathPlot">
-				<Option output="../../../devel/MathPlot" prefix_auto="1" extension_auto="1" />
+				<Option output="$(CB_LIB)/plugins/contrib/wxSmithPlot/MathPlot" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="../../../.objs/plugins/contrib/wxSmithPlot/MathPlot" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmithPlot/MathPlot" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 			</Target>
 			<Target title="wxSmithPlot">
 				<Option platforms="Windows;" />
-				<Option output="../../../devel/share/codeblocks/plugins/wxSmithPlot" prefix_auto="0" extension_auto="1" />
-				<Option working_dir="../../../devel" />
-				<Option object_output="../../../.objs/plugins/contrib/wxSmithPlot" />
+				<Option output="$(CB_BIN)/share/codeblocks/plugins/wxSmithPlot" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="$(CB_BIN)" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/wxSmithPlot" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log -na -ns -nd -p debug" />
@@ -42,14 +42,18 @@
 					<Add library="wxsmithlib" />
 					<Add library="codeblocks" />
 					<Add library="wxpropgrid" />
-					<Add directory="../../../devel" />
+					<Add directory="$(CB_LIB)/plugins/contrib/wxSmithPlot" />
+					<Add directory="$(CB_BIN)" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="zip -j9 ..\..\..\devel\share\CodeBlocks\wxSmithPlot.zip manifest.xml" />
+					<Add after="zip -j9 $(CB_BIN)\share\CodeBlocks\wxSmithPlot.zip manifest.xml" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
 			<Environment>
+				<Variable name="CB_BIN" value="..\..\..\devel" />
+				<Variable name="CB_LIB" value="..\..\..\lib" />
+				<Variable name="CB_OBJ" value="..\..\..\.objs" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 			</Environment>

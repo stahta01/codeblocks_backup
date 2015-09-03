@@ -8,17 +8,20 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="../../../devel/share/CodeBlocks/plugins/cb_koders.dll" prefix_auto="0" extension_auto="0" />
-				<Option object_output="../../../.objs/plugins/contrib/cb_koders" />
-				<Option external_deps="../../../devel/libcodeblocks.a;../../../devel/libwxscintilla_cb.a;" />
+				<Option output="$(CB_BIN)/share/CodeBlocks/plugins/cb_koders.dll" prefix_auto="0" extension_auto="0" />
+				<Option object_output="$(CB_OBJ)/plugins/contrib/cb_koders" />
+				<Option external_deps="$(CB_LIB)/libcodeblocks.a;$(CB_LIB)/libwxscintilla_cb.a;" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters="--debug-log --multiple-instance -na -ns -nd -p debug" />
-				<Option host_application="../../../devel/codeblocks.exe" />
+				<Option host_application="$(CB_BIN)/codeblocks.exe" />
 				<Option run_host_application_in_terminal="0" />
 				<Option projectResourceIncludeDirsRelation="0" />
 			</Target>
 			<Environment>
+				<Variable name="CB_BIN" value="..\..\..\devel" />
+				<Variable name="CB_LIB" value="..\..\..\lib" />
+				<Variable name="CB_OBJ" value="..\..\..\.objs" />
 				<Variable name="WX_CFG" value="" />
 				<Variable name="WX_SUFFIX" value="u" />
 			</Environment>
@@ -56,10 +59,10 @@
 			<Add library="wxmsw28$(WX_SUFFIX)" />
 			<Add library="codeblocks" />
 			<Add directory="$(#WX.lib)/gcc_dll$(WX_CFG)" />
-			<Add directory="../../../devel" />
+			<Add directory="$(CB_LIB)" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="zip -j9 ..\..\..\devel\share\CodeBlocks\cb_koders.zip manifest.xml" />
+			<Add after="zip -j9 $(CB_BIN)\share\CodeBlocks\cb_koders.zip manifest.xml" />
 			<Mode after="always" />
 		</ExtraCommands>
 		<Unit filename="cb_koders.cpp" />
