@@ -137,7 +137,11 @@ void cache_read(const char *path)
 
 		/* C::B patch: Compatibility with 64 bit compiler / OS */
 		#if defined(_WIN64)
+		#if defined(_POSIX)
+		sscanf(buf, "%lld %n", &timeval, &n);
+		#else
 		sscanf(buf, "%I64d %n", &timeval, &n);
+		#endif // _POSIX
 		#else
 		sscanf(buf, "%ld %n", &timeval, &n);
 		#endif
@@ -168,7 +172,11 @@ void cache_write(const char *path)
 		LIST *l;
 		/* C::B patch: Compatibility with 64 bit compiler / OS */
 		#if defined(_WIN64)
+		#if defined(_POSIX)
+		fprintf(f, "%lld %s\n", h->time, h->file);
+		#else
 		fprintf(f, "%I64d %s\n", h->time, h->file);
+		#endif // _POSIX
 		#else
 		fprintf(f, "%ld %s\n", h->time, h->file);
 		#endif

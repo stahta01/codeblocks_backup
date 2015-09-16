@@ -76,7 +76,11 @@ SQString *SQVM::PrintObjVal(const SQObject &o)
 	case OT_INTEGER:
 		// C::B patch: Support for Windows 64 bit
 		#if defined(_WIN64)
+		#if defined(_POSIX)
+		scsprintf(_sp(rsl(NUMBER_MAX_CHAR+1)), _SC("%lld"), _integer(o));
+		#else
 		scsprintf(_sp(rsl(NUMBER_MAX_CHAR+1)), _SC("%I64d"), _integer(o));
+		#endif // _POSIX
 		// C::B patch: Support for Linux 64 bit
 		#elif defined(_SQ64)
 		scsprintf(_sp(rsl(NUMBER_MAX_CHAR+1)), _SC("%ld"), _integer(o));

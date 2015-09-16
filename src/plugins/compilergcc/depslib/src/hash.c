@@ -267,7 +267,11 @@ hashstat( struct hash *hp )
 	printf( "%s table: %d+%d+%d (%dK+%luK) items+table+hash, %f density\n",
 /* C::B patch: Compatibility with 64 bit compiler / OS*/
 #elif defined(_WIN64)
+	#if defined(_POSIX)
+	printf( "%s table: %d+%d+%d (%dK+%lldK) items+table+hash, %f density\n",
+	#else
 	printf( "%s table: %d+%d+%d (%dK+%I64dK) items+table+hash, %f density\n",
+	#endif // _POSIX
 #else
 	printf( "%s table: %d+%d+%d (%dK+%dK) items+table+hash, %f density\n",
 #endif

@@ -82,7 +82,11 @@ void DumpLiteral(SQObjectPtr &o)
 		case OT_INTEGER:
 			// C::B patch: Support for Windows 64 bit
             #if defined(_WIN64)
+            #if defined(_POSIX)
+            scprintf(_SC("{%lld}"),_integer(o));
+            #else
             scprintf(_SC("{%I64d}"),_integer(o));
+            #endif // _POSIX
 			// C::B patch: Support for Linux 64 bit
             #elif defined(_SQ64)
             scprintf(_SC("{%ld}"),_integer(o));
