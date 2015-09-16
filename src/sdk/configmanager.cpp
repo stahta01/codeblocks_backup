@@ -1504,6 +1504,10 @@ void ConfigManager::InitPaths()
 #ifdef CB_AUTOCONF
     if (plugin_path_global.IsEmpty())
     {
+#ifdef __WXMSW__
+        // GetInstallPrefix causes linking error with WXMSW
+        ConfigManager::plugin_path_global = data_path_global;
+#else
         if (platform::windows || platform::macosx)
             ConfigManager::plugin_path_global = data_path_global;
         else
@@ -1519,8 +1523,9 @@ void ConfigManager::InitPaths()
                 ConfigManager::plugin_path_global = ((const wxStandardPaths&)wxStandardPaths::Get()).GetInstallPrefix() + _T("/lib64/codeblocks/plugins");
             }
         }
+#endif // __WXMSW__
     }
-#endif
+#endif // CB_AUTOCONF
 
     wxString dataPathUser = ConfigManager::config_folder + wxFILE_SEP_PATH + _T("share");
 #ifdef __linux__
