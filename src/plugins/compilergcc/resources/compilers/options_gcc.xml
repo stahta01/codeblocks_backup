@@ -37,6 +37,7 @@
     <Switch name="supportsPCH"             value="true"/>
     <Switch name="PCHExtension"            value="gch"/>
     <Switch name="UseFullSourcePaths"      value="true"/>
+    <Switch name="forceFwdSlashes"         value="true"/>
 
     <!-- Summary of GCC options: http://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html -->
 
@@ -133,7 +134,7 @@
         <Command name="LinkDynamic"
                  value="$linker -shared -Wl,--output-def=$def_output -Wl,--out-implib=$static_output -Wl,--dll $libdirs $link_objects $link_resobjects -o $exe_output $link_options $libs"/>
         <Command name="LinkStatic"
-                 value="cmd /c if exist $static_output del $static_output\n$lib_linker -r -s $static_output $link_objects"/>
+                 value="rm -f $static_output\n$lib_linker -r -s $static_output $link_objects"/>
     </if>
     <else>
         <Command name="LinkNative"
