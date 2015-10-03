@@ -58,7 +58,7 @@
 			<Add directory="$(#WX30_64.lib)/gcc_dll$(WX_CFG)" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="zip -j9 ..\..\..\devel30_64\share\codeblocks\SymTab.zip resources\manifest.xml resources\*.xrc" />
+			<Add after="zip -j9 ../../../devel30_64/share/codeblocks/SymTab.zip resources/manifest.xml resources/*.xrc" />
 			<Mode after="always" />
 		</ExtraCommands>
 		<Unit filename="resources/config_dialog.xrc" />
