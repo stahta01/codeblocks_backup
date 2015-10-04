@@ -138,6 +138,7 @@ void MacrosManager::ClearProjectKeys()
         m_Macros[_T("CMD_NULL")]  = cmd + _T("NUL");
         m_Macros[_T("CMD_MKDIR")] = cmd + _T("md");
         m_Macros[_T("CMD_RMDIR")] = cmd + _T("rd");
+        m_Macros[_T("CMD_SHELL")] = shell;
     }
     else
     {
@@ -147,6 +148,7 @@ void MacrosManager::ClearProjectKeys()
         m_Macros[_T("CMD_NULL")]   = _T("/dev/null");
         m_Macros[_T("CMD_MKDIR")]  = _T("mkdir -p");
         m_Macros[_T("CMD_RMDIR")]  = _T("rmdir");
+        m_Macros[_T("CMD_SHELL")]  = shell;
     }
 
     cbWorkspace* wksp = Manager::Get()->GetProjectManager()->GetWorkspace();
