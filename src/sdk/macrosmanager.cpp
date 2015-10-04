@@ -128,9 +128,10 @@ void MacrosManager::ClearProjectKeys()
     m_Macros[_T("LANGUAGE")]   = wxLocale::GetLanguageName(wxLocale::GetSystemLanguage());
     m_Macros[_T("ENCODING")]   = wxLocale::GetSystemEncodingName();
 
+    const wxString shell = Manager::Get()->GetConfigManager(_T("app"))->Read(_T("/console_shell"), DEFAULT_CONSOLE_SHELL);
     if (platform::windows)
     {
-        const wxString cmd(_T("cmd /c "));
+        const wxString cmd = shell + _T(" ");
         m_Macros[_T("CMD_CP")]    = cmd + _T("copy");
         m_Macros[_T("CMD_RM")]    = cmd + _T("del");
         m_Macros[_T("CMD_MV")]    = cmd + _T("move");

@@ -869,7 +869,10 @@ wxString ExpandBackticks(wxString& str) // backticks are written in-place to str
             Manager::Get()->GetLogManager()->DebugLog(F(_T("Caching result of `%s`"), cmd.wx_str()));
             wxArrayString output;
             if (platform::WindowsVersion() >= platform::winver_WindowsNT2000)
-                wxExecute(_T("cmd /c ") + cmd, output, wxEXEC_NODISABLE);
+            {
+                wxString shell = Manager::Get()->GetConfigManager(_T("app"))->Read(_T("/console_shell"), DEFAULT_CONSOLE_SHELL);
+                wxExecute(shell + _T(" ") + cmd, output, wxEXEC_NODISABLE);
+            }
             else
                 wxExecute(cmd,                 output, wxEXEC_NODISABLE);
             bt = GetStringFromArray(output, _T(" "), false);
