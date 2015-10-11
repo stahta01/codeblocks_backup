@@ -26,24 +26,12 @@
     #undef CB_PRECOMP
 #endif // NOPCH
 
-#if ( defined(CB_PRECOMP) && !defined(WX_PRECOMP) )
-    #define WX_PRECOMP
-#endif // CB_PRECOMP
-
-// basic wxWidgets headers : this one itself will check for precompiled headers
-// and if so will include a list of wx headers, at the bottom we add some more headers
-// in the case of precompilation (note : some headers are in both lists)
-// so even if NO CB_PRECOMP we can still have WX_PRECOMP turned on in this "wxprec" header
-#include <wx/wxprec.h>
-
-#ifdef __BORLANDC__
-	#pragma hdrstop
-#endif
 
 #include "prep.h" // this is deliberately not inside the #ifdef block
 
 #ifdef CB_PRECOMP
 
+    #include <wx/defs.h> // Special wx Header that should be before the other wx headers.
     // some common wxWidgets headers
     #include <wx/app.h>
     #include <wx/arrstr.h>
