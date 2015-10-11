@@ -7,6 +7,11 @@
  * $HeadURL$
  */
 
+#ifndef SDK_PRECOMP_H
+    #include "sdk_precomp.h"
+#endif // SDK_PRECOMP_H
+#ifndef CB_PRECOMP
+#endif // CB_PRECOMP
 #include "configurationpanel.h"
 #include <wx/intl.h>
 #include <wx/statline.h>

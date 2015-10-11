@@ -3,11 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+#ifndef SDK_PRECOMP_H
+    #include "sdk_precomp.h"
+#endif // SDK_PRECOMP_H
+#ifndef CB_PRECOMP
+    #include "configmanager.h"
+#endif // CB_PRECOMP
+
 #include <stdio.h>
 #include "prmem.h"
 #include "mozilla/NullPtr.h"
-
-#include "configmanager.h"
 
 #include "nsSBCharSetProber.h"
 #include "nsSBCSGroupProber.h"

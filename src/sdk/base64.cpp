@@ -20,6 +20,10 @@
 // converted to wxWindows by Frank Bu?
 //
 
+#ifndef SDK_PRECOMP_H
+    #include "sdk_precomp.h"
+#endif // SDK_PRECOMP_H
+
 #include "base64.h"
 
 #if wxCHECK_VERSION(2, 9, 0)

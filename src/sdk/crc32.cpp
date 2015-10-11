@@ -18,6 +18,12 @@
     Yiannis Mandravellos <mandrav@codeblocks.org>
 */
 
+#ifndef SDK_PRECOMP_H
+    #include "sdk_precomp.h"
+#endif // SDK_PRECOMP_H
+#ifndef CB_PRECOMP
+#endif // CB_PRECOMP
+
 #include <wx/string.h>
 #include <wx/file.h>
 #include "crc32.h"
