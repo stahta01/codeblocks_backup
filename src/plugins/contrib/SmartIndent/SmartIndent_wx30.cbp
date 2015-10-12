@@ -18,7 +18,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -39,7 +38,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -60,7 +58,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -81,7 +78,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -102,7 +98,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -123,7 +118,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -144,7 +138,6 @@
 				<Option projectCompilerOptionsRelation="2" />
 				<Compiler>
 					<Add option="$(#CB_RELEASE_TYPE)" />
-					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="." />
 				</Compiler>
 				<ExtraCommands>
@@ -169,11 +162,8 @@
 			<Add option="-fexceptions" />
 			<Add option="-DHAVE_W32API_H" />
 			<Add option="-D__WXMSW__" />
-			<Add option="-DWXUSINGDLL" />
 			<Add option="-DcbDEBUG" />
-			<Add option="-DNOPCH" />
 			<Add option="-DwxUSE_UNICODE" />
-			<Add option="-DNOPCH" />
 			<Add directory="../../../include" />
 			<Add directory="../../../sdk/wxscintilla/include" />
 			<Add directory="$(#WX30.include)" />

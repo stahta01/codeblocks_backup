@@ -66,8 +66,6 @@
 				<Option run_host_application_in_terminal="0" />
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
-					<Add option="-DBUILDING_PLUGIN" />
-					<Add option="-DNOPCH" />
 					<Add option="-DcbDEBUG" />
 					<Add directory="../../../include" />
 					<Add directory="../../../sdk/wxscintilla/include" />
@@ -101,7 +99,6 @@
 			<Add option="-fexceptions" />
 			<Add option="-DHAVE_W32API_H" />
 			<Add option="-D__WXMSW__" />
-			<Add option="-DWXUSINGDLL" />
 			<Add option="-DwxUSE_UNICODE" />
 			<Add option="-DWXMAKINGDLL_PDFDOC" />
 			<Add option="-DwxPDF_USE_WXMODULE=0" />

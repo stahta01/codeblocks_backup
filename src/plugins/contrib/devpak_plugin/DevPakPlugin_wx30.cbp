@@ -34,11 +34,8 @@
 					<Add option="$(#CB_RELEASE_TYPE)" />
 					<Add option="-mthreads" />
 					<Add option="-fexceptions" />
-					<Add option="-DBUILDING_PLUGIN" />
-					<Add option="-DNOPCH" />
 					<Add option="-DHAVE_W32API_H" />
 					<Add option="-D__WXMSW__" />
-					<Add option="-DWXUSINGDLL" />
 					<Add option="-DcbDEBUG" />
 					<Add option="-DwxUSE_UNICODE" />
 					<Add directory="../../../include" />

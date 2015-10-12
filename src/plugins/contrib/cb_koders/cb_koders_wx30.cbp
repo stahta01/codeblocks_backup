@@ -34,12 +34,9 @@
 			<Add option="-fexceptions" />
 			<Add option="-mthreads" />
 			<Add option="-DcbDEBUG" />
-			<Add option="-DNOPCH" />
 			<Add option="-DHAVE_W32API_H" />
 			<Add option="-D__WXMSW__" />
-			<Add option="-DWXUSINGDLL" />
 			<Add option="-DwxUSE_UNICODE" />
-			<Add option="-DBUILDING_PLUGIN" />
 			<Add directory="$(#WX30.include)" />
 			<Add directory="$(#WX30.lib)/gcc_dll$(WX_CFG)/msw$(WX_SUFFIX)" />
 			<Add directory="../../../include" />
