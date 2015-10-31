@@ -87,6 +87,7 @@
 				<Option type="2" />
 				<Option compiler="cygwin" />
 				<Compiler>
+					<Add option="`$(WX_CONFIG_CFLAGS)`" />
 					<Add option="-D__WX__" />
 					<Add option="-DWINVER=0x0501" />
 					<Add option="-DLINK_LEXERS" />
@@ -119,6 +120,7 @@
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
 					<Add option="-Woverloaded-virtual" />
+					<Add option="`$(WX_CONFIG_CFLAGS)`" />
 					<Add option="-DEXPORT_LIB" />
 					<Add option="-DEXPORT_EVENTS" />
 					<Add option="-DWXMAKINGDLL_SCI" />
@@ -140,9 +142,10 @@
 					<Add option="-Wl,--add-stdcall-alias" />
 					<Add option="-Wl,--enable-auto-import" />
 					<Add option="-Wl,--no-undefined" />
+					<Add option="-lwxscintilla_cb" />
+					<Add option="`$(WX_CONFIG_LIBS)`" />
 					<Add library="shfolder" />
 					<Add library="txml" />
-					<Add library="wxscintilla_cb" />
 					<Add library="sqplus" />
 					<Add library="sqstdlib" />
 					<Add library="squirrel" />
@@ -168,6 +171,7 @@
 				<Option parameters="--debug-log --no-dde --no-check-associations --multiple-instance --no-splash-screen --verbose -p debug" />
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
+					<Add option="`$(WX_CONFIG_CFLAGS)`" />
 					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="include" />
 					<Add directory="include/scripting/include" />
@@ -180,9 +184,14 @@
 					<Add directory="include/mozilla_chardet/xpcom/glue" />
 					<Add directory="exchndl/win32/include" />
 				</Compiler>
+				<ResourceCompiler>
+					<Add option="`$(WX_CONFIG_RCFLAGS)`" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-3.0" />
+				</ResourceCompiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-import" />
 					<Add option="-Wl,--no-undefined" />
+					<Add option="`$(WX_CONFIG_LIBS)`" />
 					<Add library="codeblocks" />
 					<Add library="exchndl" />
 					<Add library="shfolder" />
@@ -338,6 +347,7 @@
 				<Option run_host_application_in_terminal="0" />
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
+					<Add option="`$(WX_CONFIG_CFLAGS)`" />
 					<Add option="-DBUILDING_PLUGIN" />
 					<Add directory="include" />
 					<Add directory="plugins/compilergcc/depslib/src" />
@@ -350,8 +360,8 @@
 					<Add option="-Wl,--enable-auto-import" />
 					<Add option="-Wl,--no-undefined" />
 					<Add option="-mthreads" />
+					<Add option="`$(WX_CONFIG_LIBS)`" />
 					<Add library="codeblocks" />
-					<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 					<Add library="depslib" />
 					<Add directory="devel30" />
 					<Add directory="plugins/compilergcc/depslib" />
@@ -700,6 +710,9 @@
 			</Target>
 			<Environment>
 				<Variable name="WX_CFG" value="" />
+				<Variable name="WX_CONFIG_CFLAGS" value='$(CMD_SHELL) &quot;sh.exe -c &apos;wx-config --version=3.0 --cflags --prefix=$(TARGET_COMPILER_DIR).&apos;&quot;' />
+				<Variable name="WX_CONFIG_LIBS" value='$(CMD_SHELL) &quot;sh.exe -c &apos;wx-config --version=3.0 --libs std,aui,propgrid --prefix=$(TARGET_COMPILER_DIR).&apos;&quot;' />
+				<Variable name="WX_CONFIG_RCFLAGS" value='$(CMD_SHELL) &quot;sh.exe -c &apos;wx-config --version=3.0 --rcflags --prefix=$(TARGET_COMPILER_DIR).&apos;&quot;' />
 				<Variable name="WX_SUFFIX" value="u" />
 				<Variable name="WX_VERSION" value="30" />
 			</Environment>
@@ -725,10 +738,7 @@
 			<Add directory="sdk/wxscintilla/include" />
 			<Add directory="include/tinyxml" />
 		</Compiler>
-		<ResourceCompiler>
-		</ResourceCompiler>
 		<Linker>
-			<Add library="wxmsw$(WX_VERSION)$(WX_SUFFIX)" />
 			<Add directory="base/tinyxml" />
 		</Linker>
 		<Unit filename="base/tinyxml/tinystr.cpp">
