@@ -131,6 +131,7 @@ void MacrosManager::ClearProjectKeys()
     if (platform::windows)
     {
         const wxString cmd(_T("cmd /c "));
+        m_Macros[_T("CMD_SHELL")] = _T("cmd /c");
         m_Macros[_T("CMD_CP")]    = cmd + _T("copy");
         m_Macros[_T("CMD_RM")]    = cmd + _T("del");
         m_Macros[_T("CMD_MV")]    = cmd + _T("move");
@@ -140,6 +141,7 @@ void MacrosManager::ClearProjectKeys()
     }
     else
     {
+        m_Macros[_T("CMD_SHELL")]  = _T("sh -c");
         m_Macros[_T("CMD_CP")]     = _T("cp --preserve=timestamps");
         m_Macros[_T("CMD_RM")]     = _T("rm");
         m_Macros[_T("CMD_MV")]     = _T("mv");
