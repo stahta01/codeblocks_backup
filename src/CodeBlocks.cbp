@@ -111,6 +111,7 @@
 					<Add option="-DwxPG_SUPPORT_TOOLTIPS" />
 					<Add directory="sdk/wxpropgrid/include" />
 					<Add directory="include" />
+					<Add directory="sdk/wxpropgrid/include/wx/propgrid" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="sdk/wxpropgrid/include" />
@@ -195,6 +196,7 @@
 					<Add directory="include/mozilla_chardet/xpcom/base" />
 					<Add directory="include/mozilla_chardet/xpcom/glue" />
 					<Add directory="exchndl/win32/include" />
+					<Add directory="sdk/wxpropgrid/include/wx/propgrid" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-import" />
@@ -355,6 +357,7 @@
 					<Add directory="plugins/compilergcc/depslib/src" />
 					<Add directory="include/scripting/include" />
 					<Add directory="include/scripting/sqplus" />
+					<Add directory="sdk/wxpropgrid/include/wx/propgrid" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
@@ -429,6 +432,8 @@
 					<Add directory="include/mozilla_chardet/xpcom" />
 					<Add directory="include/mozilla_chardet/xpcom/base" />
 					<Add directory="include/mozilla_chardet/xpcom/glue" />
+					<Add directory="plugins/codecompletion" />
+					<Add directory="plugins/codecompletion/parser" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,--enable-auto-image-base" />
