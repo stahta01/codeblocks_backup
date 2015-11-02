@@ -185,7 +185,6 @@
 					<Add directory="exchndl/win32/include" />
 				</Compiler>
 				<ResourceCompiler>
-					<Add option="`$(WX_CONFIG_RCFLAGS)`" />
 					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-3.0" />
 				</ResourceCompiler>
 				<Linker>
